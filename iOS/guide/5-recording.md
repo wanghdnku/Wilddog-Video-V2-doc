@@ -14,7 +14,7 @@ title: 本地视频录制
 
 ## 停止录制媒体流
 
-使用 `-[WDGConversation stopLocalRecording]` 来录制本地媒体流。
+使用 `-[WDGConversation stopLocalRecording]` 来停止录制本地媒体流。
 
 ```objectivec
 [self.conversation stopLocalRecording];
