@@ -5,17 +5,33 @@ title: WDGLocalStreamOptions
 
 ## 属性
 
-### audioOn
+### shouldCaptureAudio
 
 **定义**
 
 ```objectivec
-@property (nonatomic, assign) BOOL audioOn;
+@property (nonatomic, assign) BOOL shouldCaptureAudio;
 ```
 
 **说明**
 
-本地视频流的音频开关。默认为开。
+本地媒体流的音频开关。默认为开。
+
+</br>
+
+---
+
+### shouldCaptureVideo
+
+**定义**
+
+```objectivec
+@property (nonatomic, assign) BOOL shouldCaptureVideo;
+```
+
+**说明**
+
+本地媒体流的视频开关。默认为开。
 
 </br>
 
@@ -32,6 +48,22 @@ title: WDGLocalStreamOptions
 **说明**
 
 视频质量选项。默认为 `WDGVideoDimensions480p`。
+
+</br>
+
+---
+
+### maxFPS
+
+**定义**
+
+```objectivec
+@property (nonatomic, assign) int maxFPS;
+```
+
+**说明**
+
+表示最大的视频帧率，默认为16fps。
 
 </br>
 
