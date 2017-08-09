@@ -37,7 +37,7 @@ localStreamOptions.maxFPS = 20;
 [localStream attach:self.localVideoView];
 ```
 
-播放预览视频流：
+停止播放视频流：
 
 ```objectivec
 [localStream detach:self.localVideoView];

@@ -17,7 +17,7 @@ LocalStream localStream = video.createLocalStream(options);
 ### 配置媒体流
 
 创建的时候，需要传入一个 `LocalStreamOptions` 对象，这个参数确定了本地视频流的音频、视频开关、最大尺寸和最大帧率：
-* audioOn / videoOn 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
+* audioEnabled / videoEnabled 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
 * dimension 用来设置视频的最大尺寸，默认为 480p，如果网络条件较差，会自动降低尺寸大小；
 * maxFPS 用来设置视频的最大帧率，默认为 15 帧／秒，如果网络条件较差，会自动降低帧率。
 
@@ -38,7 +38,7 @@ WilddogVideView localView = (WilddogVideView)findViewById(R.id.wvv_local);
 localStream.attach(localView);
 ```
 
-播放预览视频流：
+停止播放视频流：
 
 ```java
 localStream.detach();
@@ -48,7 +48,7 @@ localStream.detach();
 
 可以设定 `-[WDGStream playAudio]` 和 `-[WDGStream playVideo]` 两个属性来控制是否播放音频、视频，默认都为开启。
 
-```objectivec
+```java
 // 设置不播放媒体流的音频。
-localStream.playAudio = NO;
+localStream.playVideo(false);
 ```

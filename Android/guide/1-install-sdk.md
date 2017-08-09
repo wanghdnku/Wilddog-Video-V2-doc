@@ -111,9 +111,9 @@ Warning:WARNING: Dependency org.json:json:20090211 is ignored for debug as it ma
 	}
 ```
 
-### 设置代理
+### 设置监听回调
 
-设置 `WDGVideo` 的代理用于监听通话请求：
+设置 `WilddogVideo` 的监听回调用于监听通话请求：
 
 ```java
      video.setListener(new WilddogVideo.Listener() {
@@ -137,7 +137,7 @@ Warning:WARNING: Dependency org.json:json:20090211 is ignored for debug as it ma
      }
 ```
 
-实现代理方法 `-[WDGVideoDelegate wilddogVideo:didFailWithTokenError:]`，当 `token` 错误或过期时，会触发该方法：
+实现代理方法 `onTokenError(WilddogVideoError wilddogVideoError)`，当 `token` 错误或过期时，会触发该方法：
 
 ```java
      public void onTokenError(WilddogVideoError wilddogVideoError) {
