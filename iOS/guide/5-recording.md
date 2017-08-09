@@ -6,16 +6,15 @@ title: 本地视频录制
  
 ## 录制本地媒体流
 
-在视频通话中，可以将本地媒体流录制下来，并保存到本地目录中：
+在视频通话中，使用 `-[WDGConversation startLocalRecording]` 来录制本地媒体流，该方法需要传入存储路径：
 
 ```objectivec
-NSString *path = @"your-local-path";
-[self.conversation startLocalRecording:path];
+[self.conversation startLocalRecording:@"your-local-path"];
 ```
 
 ## 停止录制媒体流
 
-调用 `- stopLocalRecording` 方法可以停止本地媒体流的录制：
+使用 `-[WDGConversation stopLocalRecording]` 来录制本地媒体流。
 
 ```objectivec
 [self.conversation stopLocalRecording];
