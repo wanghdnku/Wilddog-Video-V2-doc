@@ -1,7 +1,7 @@
 title: WDGLocalStreamOptions
 ---
 
-本地视频流配置。
+`WDGLocalStreamOption` 中包含了音／视频开关、视频尺寸、最大帧率等选项，用于配置本地媒体流。
 
 ## 属性
 
@@ -15,7 +15,7 @@ title: WDGLocalStreamOptions
 
 **说明**
 
-本地媒体流的音频开关。默认为开。
+是否采集本地音频，默认为 YES。
 
 </br>
 
@@ -31,7 +31,7 @@ title: WDGLocalStreamOptions
 
 **说明**
 
-本地媒体流的视频开关。默认为开。
+是否采集本地视频，默认为 YES。
 
 </br>
 
@@ -63,7 +63,7 @@ title: WDGLocalStreamOptions
 
 **说明**
 
-表示最大的视频帧率，默认为16fps。
+表示最大的视频帧率，默认为 16fps。
 
 </br>
 

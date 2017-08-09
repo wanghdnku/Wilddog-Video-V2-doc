@@ -15,15 +15,15 @@ title: WDGVideoDelegate
 
 **说明**
 
-`WDGVideo` 通过调用该方法通知当前用户收到新的视频通话邀请。
+`WDGVideo` 通过调用该方法通知当前用户收到视频通话邀请。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-video | 调用该方法的 `WDGVideo` 实例。
-conversation | 代表收到的视频通话的 `WDGConversation` 实例。
-data | 随通话邀请传递的 `NSString` 类型的数据。
+video        | 调用该方法的 `WDGVideo` 实例。
+conversation | 代表收到邀请的视频通话的 `WDGConversation` 实例。
+data         | 随通话邀请传递的 `NSString` 类型的数据。
 
 </br>
 

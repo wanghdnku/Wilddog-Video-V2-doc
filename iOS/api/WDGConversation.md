@@ -1,7 +1,7 @@
 title: WDGConversation
 ---
 
-表示用户参与的视频通话，同一时间只能参与一个视频通话。
+`WDGConversation` 代表用户参与的视频通话，同一时间只能参与一个视频通话。
 
 ## 属性
 
@@ -15,7 +15,7 @@ title: WDGConversation
 
 **说明**
 
-表示视频通话对方的 User ID。
+表示视频通话对方的 uid。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGConversation
 
 **说明**
 
-符合 `WDGConversationStatsDelegate` 协议的代理。用于获取视频流的统计数据。
+符合 `WDGConversationStatsDelegate` 协议的代理。用于获取媒体流的统计数据。
 
 </br>
 
@@ -65,7 +65,7 @@ title: WDGConversation
 
 **说明**
 
-接受对方的视频通话请求，并上传自己的本地媒体流。
+接受视频通话邀请，并上传自己的本地媒体流。
 
 **参数**
 
@@ -103,7 +103,7 @@ localStream | `WDGLocalStream` 实例，表示本地媒体流。
 
 **说明**
 
-关闭当前视频通话。
+结束当前视频通话。
 
 </br>
 
@@ -119,7 +119,7 @@ localStream | `WDGLocalStream` 实例，表示本地媒体流。
 
 **说明**
 
-开始录制视频并保存到本地filePath目录下。
+开始录制本地音视频并保存到本地目录。
 
 **参数**
 
@@ -141,7 +141,7 @@ filePath | 视频文件保存路径。
 
 **说明**
 
-停止录制视频。
+停止录制本地音视频。
 
 **返回值**
 
@@ -172,7 +172,7 @@ typedef NS_ENUM(NSUInteger, WDGCallStatus) {
 
 - WDGCallStatusAccepted: 表示视频通话邀请被接受。
 - WDGCallStatusRejected: 表示视频通话邀请被拒绝。
-- WDGCallStatusBusy: 表示视频通话被关闭。
+- WDGCallStatusBusy: 表示被叫用户正忙。
 - WDGCallStatusTimeout: 表示视频通话请求等待超时。
 
 </br>

@@ -1,7 +1,7 @@
 title: WDGVideo
 ---
 
-`WDGVideo` 是程序的主入口，用于创建并配置本地流，发起视频通话。
+`WDGVideo` 是程序的主入口，用于创建并配置本地媒体流，发起视频通话。
 
 ## 属性
 
@@ -15,7 +15,7 @@ title: WDGVideo
 
 **说明**
 
-符合 [WDGVideoDelegate](url_placeholder) 协议的代理，用于处理视频通话的创建和邀请消息。
+符合 [WDGVideoDelegate](url_placeholder) 协议的代理，用于接收视频通话邀请、在 token 错误时接收错误信息。
 
 </br>
 
@@ -37,7 +37,7 @@ title: WDGVideo
 
 **返回值**
 
-`WDGVideo`单例。
+`WDGVideo`实例。
 
 </br>
 
@@ -98,7 +98,7 @@ token | 通过 `WDGAuth` 登录的用户的 Wilddog ID token。
 
 **说明**
 
-开启或者重置 `WDGVideo` 相关的 WebSocket 连接。`- configureWithVideoAppId:token:` 默认会自动开启 WebSocket 连接。
+开启或者重置与视频通话相关的 WebSocket 连接。执行 `- configureWithVideoAppId:token:` 时默认会自动开启 WebSocket 连接。
 
 </br>
 
@@ -114,7 +114,7 @@ token | 通过 `WDGAuth` 登录的用户的 Wilddog ID token。
 
 **说明**
 
-断开 `WDGVideo` 相关的 WebSocket 连接。
+断开与视频通话相关的 WebSocket 连接。
 
 </br>
 
@@ -140,7 +140,7 @@ options | `WDGLocalStreamOptions` 实例，用于配置本地视频和音频。
 
 **返回值**
 
-配置好的 `WDGLocalStream` 实例。
+`WDGLocalStream` 实例。
 
 </br>
 
@@ -156,19 +156,19 @@ options | `WDGLocalStreamOptions` 实例，用于配置本地视频和音频。
 
 **说明**
 
-初始化 `WDGVideoClient` 实例。在初始化前需要先通过 `WDGAuth` 登录。
+发起视频通话邀请，需要指定被叫方的 uid，并且添加本地的媒体流。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-uid | 被邀请者的 User ID。
-localStream | 
-data | 可随邀请传递一个 `NSString` 类型的数据。
+uid         | 被叫方的 User ID。
+localStream | `WDGLocalStream` 实例，代表主叫方的本地媒体流。
+data        | 随邀请传递的 `NSString` 类型的数据，可以为空。
 
 **返回值**
 
-`WDGVideoClient` 实例，若初始化失败返回nil。
+`WDGConversation` 实例，代表主叫方创建的视频通话。
 
 </br>
 

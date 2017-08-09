@@ -15,7 +15,7 @@ title: WDGLocalStreamDelegate
 
 **说明**
 
-处理视频流并返回。视频流格式为 `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`。如果返回空，则丢弃当前帧图片。
+逐帧处理媒体流并返回处理后的帧。视频流格式为 `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`。如果返回空，则丢弃当前帧。
 
 **参数**
 

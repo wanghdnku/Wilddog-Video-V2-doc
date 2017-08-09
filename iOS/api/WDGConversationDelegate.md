@@ -1,7 +1,7 @@
 title: WDGConversationDelegate
 ---
 
-[WDGVideoConversation](url_placeholder) 的代理方法，用于通知 `WDGConversation` 发生的事件。
+[WDGConversation](url_placeholder) 的代理方法，用于通知 `WDGConversation` 发生的事件。
 
 ## 方法
 
@@ -15,14 +15,14 @@ title: WDGConversationDelegate
 
 **说明**
 
-`WDGConversation` 通过调用该方法通知代理视频通话状态发生变化。
+`WDGConversation` 通过调用该方法通知代理视频通话邀请的状态发生变化。
 
 **参数**
 
  参数名 | 说明 
 ---|---
 conversation | 调用该方法的 `WDGConversation` 实例。
-callStatus | 表示视频通话的状态，有`Accepted`、`Rejected`、`Busy`、`Timeout` 四种。
+callStatus   | 表示视频通话的状态，包括已接受、已拒绝、对方忙碌、请求超时。
 
 </br>
 
@@ -38,7 +38,7 @@ callStatus | 表示视频通话的状态，有`Accepted`、`Rejected`、`Busy`�
 
 **说明**
 
-`WDGConversation` 通过调用该方法通知代理收到对方传来的媒体流。
+`WDGConversation` 通过调用该方法通知代理收到远端媒体流。
 
 **参数**
 

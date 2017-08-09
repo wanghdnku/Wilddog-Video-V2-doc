@@ -15,7 +15,7 @@ title: WDGLocalStreamStatsReport
 
 **说明**
 
-视频的宽度，以像素为单位。
+本地媒体流中视频的宽度，以像素为单位。
 
 </br>
 
@@ -31,7 +31,7 @@ title: WDGLocalStreamStatsReport
 
 **说明**
 
-视频的高度，以像素为单位。
+本地媒体流中视频的高度，以像素为单位。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGLocalStreamStatsReport
 
 **说明**
 
-视频的帧率。
+本地媒体流中视频的帧率。
 
 </br>
 
@@ -63,7 +63,7 @@ title: WDGLocalStreamStatsReport
 
 **说明**
 
-本地视频流已发送的字节数，以 byte 为单位。
+已发送本地媒体流的字节数，以 byte 为单位。
 
 </br>
 
@@ -79,7 +79,7 @@ title: WDGLocalStreamStatsReport
 
 **说明**
 
-本地视频流的发送速率，以 kbps 为单位。
+发送本地媒体流的速率，以 kbps 为单位。
 
 </br>
 
