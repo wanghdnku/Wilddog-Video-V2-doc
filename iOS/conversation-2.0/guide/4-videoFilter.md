@@ -5,7 +5,7 @@ title: 美颜滤镜
 
 ## 设置代理
 
-设置 `WDGLocalStream` 的代理用于处理本地视频流。
+设置 [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 的代理 <[WDGLocalStreamDelegate](/conversation/iOS/api/WDGLocalStreamDelegate.html)> 用于处理本地视频流。
 
 ```objectivec
 self.localStream.delegate = self;
@@ -14,8 +14,6 @@ self.localStream.delegate = self;
 ## 处理本地视频流
 
 实现代理方法 `-[WDGLocalStreamDelegate processPixelBuffer:]`，获得本地视频流后，会调用该方法处理原始视频流：
-
-设置 `WDGLocalStream` 的 `delegate` 来获取本地视频流，可以对视频流做美颜处理再返回给 Video SDK。
 
 ```objectivec
 - (CVPixelBufferRef)processPixelBuffer:(CVPixelBufferRef)pixelBuffer {
