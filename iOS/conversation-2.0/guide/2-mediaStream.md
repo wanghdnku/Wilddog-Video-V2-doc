@@ -4,7 +4,7 @@ title: 媒体流
 本篇文档介绍如何创建、配置和播放本地媒体流（包括摄像头采集的视频流和麦克风采集的音频流）。
 
 
-### 创建媒体流
+## 创建媒体流
 
 本地媒体流包含了本地设备所采集的音频、视频信息，是视频通话所需要的基本数据。本地媒体流需要通过 `WDGVideo` 创建：
 
@@ -12,7 +12,7 @@ title: 媒体流
 WDGLocalStream *localStream = [self.video localStreamWithOptions:[WDGLocalStreamOptions new]];
 ```
 
-### 配置媒体流
+## 配置媒体流
 
 创建的时候，需要传入一个 `WDGLocalStreamOptions` 对象，这个参数确定了本地视频流的音频、视频开关、最大尺寸和最大帧率：
 * shouldCaptureAudio / shouldCaptureVideo 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
@@ -27,7 +27,7 @@ localStreamOptions.dimension = WDGVideoDimensions720p;
 localStreamOptions.maxFPS = 20;
 ```
 
-### 播放媒体流
+## 播放媒体流
 
 媒体流包括音频流和视频流，音频流默认会自动播放，视频流需要使用 `WDGVideoView` 来播放。
 
