@@ -104,7 +104,7 @@ static WilddogVideo getInstance()
 
 | 参数名 | 描述 |
 |---|---|
-|listener|[WilddogVideo.Listener](/video/Android/api/wilddog-video-client-listener.html),视频通话邀请监听,监听当前邀请状态|
+|listener|[WilddogVideo.Listener](/video/Android/api/wilddog-video-listener.html),视频通话邀请监听,监听当前邀请状态|
 
 **示例**
 
@@ -129,6 +129,7 @@ public LocalStream createLocalStream(LocalStreamOptions options)
 **说明**
 
 通过本方法获取本地视频流对象。
+
 **参数**
 
 | 参数名 | 描述 |

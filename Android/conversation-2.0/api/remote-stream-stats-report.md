@@ -7,12 +7,12 @@ title: RemoteStreamStatsReport
 
 ## 属性
 
-### getId()
+### getUserId()
 
 **定义**   
 
 ```java
-public String getId()
+public String getUserId()
 ```
 **说明**
 统计信息对应的用户 ID。
@@ -79,12 +79,12 @@ public int getFps()
 
 ---
 
-### getRxBytes()
+### getBytesReceived()
 
 **定义**   
 
 ```java
-public long getRxBytes()
+public long getBytesReceived()
 ```
 
 
@@ -96,12 +96,12 @@ public long getRxBytes()
 
 ---
 
-### getRxBitRate()
+### getBitsReceivedRate()
 
 **定义**   
 
 ```java
-public int getRxBitRate()
+public int getBitsReceivedRate()
 ```
 **说明**
 对端视频流的接收速率，以 kbps 为单位。

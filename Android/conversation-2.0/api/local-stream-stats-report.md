@@ -61,12 +61,12 @@ public int getFps()
 
 ---
 
-### getTxBytes()
+### getBytesSent()
 
 **定义**   
 
 ```java
-public long getTxBytes()
+public long getBytesSent()
 ```
 
 
@@ -78,12 +78,12 @@ public long getTxBytes()
 
 ---
 
-### getTxBitRate()
+### getBitsSentRate()
 
 **定义**   
 
 ```java
-public int getTxBitRate()
+public int getBitsSentRate()
 ```
 **说明**
 本地视频流的发送速率，以 kbps 为单位。
