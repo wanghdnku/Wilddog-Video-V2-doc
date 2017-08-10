@@ -4,7 +4,7 @@ title: 安装和初始化
 本篇文档介绍如何安装 SDK 并初始化 WilddogVideo。
 
 
-### 使用 CocoaPods 安装 SDK
+## 使用 CocoaPods 安装 SDK
 
 通过 [Cocoapods](https://cocoapods.org/) 安装 Video iOS SDK 以及其依赖的 Auth SDK。
 
@@ -21,7 +21,7 @@ end
 * 双击生成的 `your-project-name.xcworkspace` 文件打开工程。
 
 
-### 初始化
+## 初始化
 
 `WDGVideo` 是 WilddogVideo SDK 功能的主入口。用户在使用 SDK 之前，要初始化 `WDGVideo` 实例，以连接野狗服务器。
 
@@ -46,7 +46,7 @@ end
 }];
 ```
 
-### 设置代理
+## 设置代理
 
 设置 `WDGVideo` 的代理用于监听通话请求：
 
