@@ -92,34 +92,6 @@ options|配置选项。
 
 ---
 
-### -inviteToConversationWithID:options:completion:
-
-**定义**
-
-```objectivec
-- (WDGVideoOutgoingInvite *_Nullable)inviteToConversationWithID:(nonnull NSString *)participantID options:(nonnull WDGVideoConnectOptions *)options completion:(nonnull WDGVideoInviteAcceptanceBlock)completionHandler;
-```
-
-**说明**
-
-邀请其他用户进行视频通话。
-
-**参数**
-
- 参数名 | 说明 
----|---
-participantID|被邀请者的 Wilddog ID。 
-options|邀请成功时使用该配置项创建通话。 
-completionHandler|当邀请得到回应后，SDK 通过该闭包通知邀请结果，若对方接受邀请，在闭包中返回 [WDGVideoConversation](/video/iOS/api/WDGVideoConversation.html) 实例，否则将在闭包中返回 `NSError` 说明邀请失败的原因。
-
-**返回值**
-
-[WDGVideoOutgoingInvite](/video/iOS/api/WDGVideoOutgoingInvite.html) 实例，可用于取消此次邀请。
-
-</br>
-
----
-
 ### -connectToConferenceWithID:options:delegate:
 
 **定义**
