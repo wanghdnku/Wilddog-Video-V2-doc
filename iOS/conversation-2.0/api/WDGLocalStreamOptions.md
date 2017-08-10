@@ -81,11 +81,11 @@ title: WDGLocalStreamOptions
 
 **说明**
 
-使用默认配置初始化。默认配置为音频开启，视频质量使用 `WDGVideoConstraintsStandard` 选项。
+使用默认配置初始化。默认配置为音频开启，视频质量使用 `WDGVideoDimensions480p` 选项。
 
 **返回值**
 
-`WDGVideoLocalStreamOptions`实例。
+`WDGVideoLocalStreamOptions` 实例。
 
 </br>
 
@@ -110,7 +110,7 @@ typedef NS_ENUM(NSUInteger, WDGVideoDimensions) {
 
 视频质量选项。
 
-- WDGVideoDimensions360p: 视频尺寸 352x288
-- WDGVideoDimensions480p: 视频尺寸 640x480
-- WDGVideoDimensions720p: 视频尺寸 1280x720
-- WDGVideoDimensions1080p: 暂未支持，若设置为此项，视频尺寸将使用 1920x1080
+- `WDGVideoDimensions360p`: 视频尺寸 352x288
+- `WDGVideoDimensions480p`: 视频尺寸 640x480
+- `WDGVideoDimensions720p`: 视频尺寸 1280x720
+- `WDGVideoDimensions1080p`: 暂未支持，若设置为此项，视频尺寸将使用 1920x1080

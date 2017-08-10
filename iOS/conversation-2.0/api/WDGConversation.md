@@ -31,7 +31,7 @@ title: WDGConversation
 
 **说明**
 
-符合 `WDGConversationDelegate` 协议的代理，用于通知 `WDGConversation` 发生的事件。
+符合 [WDGConversationDelegate](/conversation/iOS/api/WDGConversationDelegate.html) 协议的代理，用于通知 `WDGConversation` 发生的事件。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGConversation
 
 **说明**
 
-符合 `WDGConversationStatsDelegate` 协议的代理。用于获取媒体流的统计数据。
+符合 [WDGConversationStatsDelegate](/conversation/iOS/api/WDGConversationStatsDelegate.html) 协议的代理。用于获取媒体流的统计数据。
 
 </br>
 
@@ -71,7 +71,7 @@ title: WDGConversation
 
 参数名 | 说明 
 ---|---
-localStream | `WDGLocalStream` 实例，表示本地媒体流。
+localStream | [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例，表示本地媒体流。
 
 </br>
 
@@ -146,34 +146,6 @@ filePath | 视频文件保存路径。
 **返回值**
 
 视频录制是否成功关闭。
-
-</br>
-
----
-
-## 常量
-
-### WDGCallStatus 
-
-**定义**
-
-```objectivec
-typedef NS_ENUM(NSUInteger, WDGCallStatus) {
-    WDGCallStatusAccepted,
-    WDGCallStatusRejected,
-    WDGCallStatusBusy,
-    WDGCallStatusTimeout
-};
-```
-
-**说明**
-
-表示视频通话或会议的连接状态。
-
-- WDGCallStatusAccepted: 表示视频通话邀请被接受。
-- WDGCallStatusRejected: 表示视频通话邀请被拒绝。
-- WDGCallStatusBusy: 表示被叫用户正忙。
-- WDGCallStatusTimeout: 表示视频通话请求等待超时。
 
 </br>
 

@@ -15,7 +15,7 @@ title: WDGVideo
 
 **说明**
 
-符合 [WDGVideoDelegate](url_placeholder) 协议的代理，用于接收视频通话邀请、在 token 错误时接收错误信息。
+符合 [WDGVideoDelegate](/conversation/iOS/api/WDGVideoDelegate.html) 协议的代理，用于接收视频通话邀请、在 token 错误时接收错误信息。
 
 </br>
 
@@ -53,14 +53,14 @@ title: WDGVideo
 
 **说明**
 
-用于配置 `WDGVideo` 单例。配置前需要通过 `WDGAuth` 登录以获取 token。
+用于配置 `WDGVideo` 单例。配置前需要通过 [WilddogAuth](https://docs.wilddog.com/auth/iOS/index.html) 登录以获取 token。
 
 **参数**
 
  参数名 | 说明 
 ---|---
 videoAppId | 在野狗控制面板创建App后分配的 Video AppID。
-token      | 通过 `WilddogAuth` 验证登录后获取的 Wilddog ID token。
+token      | 通过 [WilddogAuth](https://docs.wilddog.com/auth/iOS/index.html) 验证登录后获取的 Wilddog ID token。
 
 </br>
 
@@ -82,7 +82,7 @@ token      | 通过 `WilddogAuth` 验证登录后获取的 Wilddog ID token。
 
  参数名 | 说明 
 ---|---
-token | 通过 `WDGAuth` 登录的用户的 Wilddog ID token。
+token | 通过 [WilddogAuth](https://docs.wilddog.com/auth/iOS/index.html) 登录的用户的 Wilddog ID token。
 
 </br>
 
@@ -130,17 +130,17 @@ token | 通过 `WDGAuth` 登录的用户的 Wilddog ID token。
 
 **说明**
 
-创建本地的媒体流，通过传入一个 `WDGLocalStreamOptions` 实例配置媒体流。
+创建本地的媒体流，通过传入一个 [WDGLocalStreamOptions](/conversation/iOS/api/WDGLocalStreamOptions.html) 实例配置媒体流。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-options | `WDGLocalStreamOptions` 实例，用于配置本地视频和音频。
+options | [WDGLocalStreamOptions](/conversation/iOS/api/WDGLocalStreamOptions.html) 实例，用于配置本地视频和音频。
 
 **返回值**
 
-`WDGLocalStream` 实例。
+[WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例。
 
 </br>
 
@@ -163,12 +163,12 @@ options | `WDGLocalStreamOptions` 实例，用于配置本地视频和音频。
  参数名 | 说明 
 ---|---
 uid         | 被叫方的 User ID。
-localStream | `WDGLocalStream` 实例，代表主叫方的本地媒体流。
-data        | 随邀请传递的 `NSString` 类型的数据，可以为空。
+localStream | [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例，代表主叫方的本地媒体流。
+data        | 随邀请传递的字符串类型的数据，可以为空。
 
 **返回值**
 
-`WDGConversation` 实例，代表主叫方创建的视频通话。
+[WDGConversation](/conversation/iOS/api/WDGConversation.html) 实例，代表主叫方创建的视频通话。
 
 </br>
 
