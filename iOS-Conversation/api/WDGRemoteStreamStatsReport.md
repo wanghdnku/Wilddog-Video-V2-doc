@@ -1,7 +1,7 @@
 title: WDGRemoteStreamStatsReport
 ---
 
-远程视频流的统计信息。
+远端视频流的统计信息。
 
 ## 属性
 
@@ -15,7 +15,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
-通话对方用户的 id。
+通话对方用户的 uid。
 
 </br>
 
@@ -31,7 +31,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
-视频的宽度，以像素为单位。
+远端媒体流中视频的宽度，以像素为单位。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
-视频的高度，以像素为单位。
+远端媒体流中视频的高度，以像素为单位。
 
 </br>
 
@@ -63,7 +63,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
-视频的帧率。
+远端媒体流中视频的帧率。
 
 </br>
 
@@ -79,7 +79,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
-远程视频流已接收的字节数，以 byte 为单位。
+已接收远端媒体流的字节数，以 byte 为单位。
 
 </br>
 
@@ -95,7 +95,7 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
- 远程视频流的接收速率，以 kbps 为单位。
+接收远端媒体流的速率，以 kbps 为单位。
 
 </br>
 
@@ -111,6 +111,6 @@ title: WDGRemoteStreamStatsReport
 
 **说明**
 
- 远程视频流的延迟，以毫秒为单位。
+远端媒体流的传输延迟，以 ms 为单位。
 
 </br>

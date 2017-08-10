@@ -15,14 +15,14 @@ WDGLocalStream *localStream = [self.video localStreamWithOptions:[WDGLocalStream
 ### 配置媒体流
 
 创建的时候，需要传入一个 `WDGLocalStreamOptions` 对象，这个参数确定了本地视频流的音频、视频开关、最大尺寸和最大帧率：
-* audioOn / videoOn 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
+* shouldCaptureAudio / shouldCaptureVideo 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
 * dimension 用来设置视频的最大尺寸，默认为 480p，如果网络条件较差，会自动降低尺寸大小；
 * maxFPS 用来设置视频的最大帧率，默认为 16 帧／秒，如果网络条件较差，会自动降低帧率。
 
 ```objectivec
 WDGLocalStreamOptions *localStreamOption = [[WDGLocalStreamOptions alloc] init];
-localStreamOption.audioOn = YES;
-localStreamOption.videoOn = YES;
+localStreamOption.shouldCaptureAudio = YES;
+localStreamOption.shouldCaptureVideo = YES;
 localStreamOptions.dimension = WDGVideoDimensions720p;
 localStreamOptions.maxFPS = 20;
 ```
@@ -37,7 +37,7 @@ localStreamOptions.maxFPS = 20;
 [localStream attach:self.localVideoView];
 ```
 
-播放预览视频流：
+停止播放视频流：
 
 ```objectivec
 [localStream detach:self.localVideoView];

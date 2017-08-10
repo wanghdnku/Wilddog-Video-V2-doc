@@ -1,7 +1,7 @@
 title: WDGLocalStream
 ---
 
-表示通过 [WDGConversation](url_placeholder) 上传的远端音频和视频流。
+表示用户设备采集的本地媒体流。
 
 ## 属性
 
@@ -31,7 +31,7 @@ title: WDGLocalStream
 
 **说明**
 
-代表流中的视频是否开启。
+表示是否播放本地媒体流的视频，默认为 YES。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGLocalStream
 
 **说明**
 
-代表流中的音频是否开启。
+表示是否播放本地媒体流的音频，默认为 YES。
 
 </br>
 
@@ -65,7 +65,7 @@ title: WDGLocalStream
 
 **说明**
 
-关闭当前流，当前流被关闭后不能继续使用。
+关闭媒体流，媒体流被关闭后不能继续使用。
 
 </br>
 
@@ -81,13 +81,13 @@ title: WDGLocalStream
 
 **说明**
 
-绑定流与视图，使当前流在指定的 `WDGVideoView` 中显示。
+绑定媒体流与视图，使媒体流的视频在指定的 `WDGVideoView` 中显示。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view | `WDGVideoView` 实例，流在该视图中展示。
+view | `WDGVideoView` 实例，媒体流在该视图中播放。
 
 </br>
 
@@ -103,13 +103,13 @@ view | `WDGVideoView` 实例，流在该视图中展示。
 
 **说明**
 
-解除当前流与指定的 `WDGVideoView` 的绑定。
+解除媒体流与指定的 `WDGVideoView` 的绑定，停止播放。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view | `WDGVideoView` 实例，流在该视图中展示。
+view | `WDGVideoView` 实例，流在该视图中播放。
 
 </br>
 
