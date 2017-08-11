@@ -52,7 +52,7 @@ self.conversation.delegate = self;
 
 ## 接受／拒绝通话请求
 
-使用 `-[WDGConversation acceptWithLocalStream:]` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](/conversation/iOS/guide/1-mediaStream.html)：
+使用 `-[WDGConversation acceptWithLocalStream:]` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](/conversation/iOS/guide/2-mediaStream.html)：
 
 ```objectivec
 [self.conversation acceptWithLocalStream:self.localStream];
