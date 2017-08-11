@@ -15,7 +15,7 @@ title: WDGVideoClient
 
 **说明**
 
-符合 [WDGVideoClientDelegate](/video/iOS/api/WDGVideoClientDelegate.html) 协议的代理，用于处理视频通话邀请消息。
+符合 [WDGVideoClientDelegate](/conference/iOS/api/WDGVideoClientDelegate.html) 协议的代理，用于处理视频通话邀请消息。
 
 </br>
 
@@ -109,9 +109,9 @@ options|配置选项。
  参数名 | 说明 
 ---|---
 conferenceID|连接的会议 ID。
-options|[WDGVideoConnectOptions](/video/iOS/api/WDGVideoConnectOptions.html) 实例，用于配置连接会议所用的选项。
-delegate|满足 [WDGVideoConferenceDelegate](/video/iOS/api/WDGVideoClientDelegate.html) 协议的代理。
+options|[WDGVideoConnectOptions](/conference/iOS/api/WDGVideoConnectOptions.html) 实例，用于配置连接会议所用的选项。
+delegate|满足 [WDGVideoConferenceDelegate](/conference/iOS/api/WDGVideoClientDelegate.html) 协议的代理。
 
 **返回值**
 
-[WDGVideoConference](/video/iOS/api/WDGVideoConference.html) 实例。
+[WDGVideoConference](/conference/iOS/api/WDGVideoConference.html) 实例。

@@ -1,7 +1,7 @@
 title: WDGVideoLocalStream
 ---
 
-`WDGVideoLocalStream` 继承自 [WDGVideoStream](/video/iOS/api/WDGVideoStream.html) ，具有 [WDGVideoStream](/video/iOS/api/WDGVideoStream.html) 所有的方法。
+`WDGVideoLocalStream` 继承自 [WDGVideoStream](/conference/iOS/api/WDGVideoStream.html) ，具有 [WDGVideoStream](/conference/iOS/api/WDGVideoStream.html) 所有的方法。
 
 ## 属性
 
@@ -15,7 +15,7 @@ title: WDGVideoLocalStream
 
 **说明**
 
-符合 [WDGVideoLocalStreamDelegate](/video/iOS/api/WDGVideoClientDelegate.html) 协议的代理，用于处理本地视频流。
+符合 [WDGVideoLocalStreamDelegate](/conference/iOS/api/WDGVideoClientDelegate.html) 协议的代理，用于处理本地视频流。
 
 </br>
 
@@ -38,7 +38,7 @@ title: WDGVideoLocalStream
 
  参数名 | 说明 
 ---|---
-options|[WDGVideoLocalStreamOptions](/video/iOS/api/WDGVideoLocalStreamOptions.html) 实例。
+options|[WDGVideoLocalStreamOptions](/conference/iOS/api/WDGVideoLocalStreamOptions.html) 实例。
 
 **返回值**
 

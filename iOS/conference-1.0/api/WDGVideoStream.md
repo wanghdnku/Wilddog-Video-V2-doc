@@ -1,7 +1,7 @@
 title: WDGVideoStream
 ---
 
-表示可通过 [WDGVideoConversation](/video/iOS/api/WDGVideoConversation.html) 传输的音频和视频流。
+表示可通过 [WDGVideoConversation](/conference/iOS/api/WDGVideoConversation.html) 传输的音频和视频流。
 
 ## 属性
 
@@ -65,13 +65,13 @@ title: WDGVideoStream
 
 **说明**
 
-绑定流与视图，使当前流在指定的 [WDGVideoView](/video/iOS/api/WDGVideoView.html) 中显示。
+绑定流与视图，使当前流在指定的 [WDGVideoView](/conference/iOS/api/WDGVideoView.html) 中显示。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view|[WDGVideoView](/video/iOS/api/WDGVideoView.html) 实例，流在该视图中展示。
+view|[WDGVideoView](/conference/iOS/api/WDGVideoView.html) 实例，流在该视图中展示。
 
 </br>
 
@@ -87,10 +87,10 @@ view|[WDGVideoView](/video/iOS/api/WDGVideoView.html) 实例，流在该视图�
 
 **说明**
 
-解除当前流与指定的 [WDGVideoView](/video/iOS/api/WDGVideoView.html) 的绑定。
+解除当前流与指定的 [WDGVideoView](/conference/iOS/api/WDGVideoView.html) 的绑定。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view|[WDGVideoView](/video/iOS/api/WDGVideoView.html) 实例，流在该视图中展示。
+view|[WDGVideoView](/conference/iOS/api/WDGVideoView.html) 实例，流在该视图中展示。

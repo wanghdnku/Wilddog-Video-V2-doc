@@ -5,7 +5,7 @@ title: 创建视频会议
 
 ## 配置和预览本地媒体流
 
-本地媒体流( [Local Stream](/video/iOS/guide/core.html#Local-Stream) )包括音频和视频，发起或加入会议前需要进行配置，成功加入一个会议后，该媒体流会发送给其他参与者。
+本地媒体流( [Local Stream](/conference/iOS/guide/core.html#Local-Stream) )包括音频和视频，发起或加入会议前需要进行配置，成功加入一个会议后，该媒体流会发送给其他参与者。
 
 例如，创建一个只有视频且分辨率为 640X480 的流，并展示出来：
 

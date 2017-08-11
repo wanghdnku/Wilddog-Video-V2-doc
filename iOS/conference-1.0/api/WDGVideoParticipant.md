@@ -47,4 +47,4 @@ title: WDGVideoParticipant
 
 **说明**
 
-符合 [WDGVideoParticipantDelegate](/video/iOS/api/WDGVideoParticipantDelegate.html) 协议的代理。
+符合 [WDGVideoParticipantDelegate](/conference/iOS/api/WDGVideoParticipantDelegate.html) 协议的代理。
