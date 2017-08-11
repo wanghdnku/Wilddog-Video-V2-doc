@@ -10,7 +10,7 @@ title: Conversation
 **定义**   
 
 ```java
-public String getRemoteUid()
+String getRemoteUid()
 ```
 
 **说明**
@@ -29,7 +29,7 @@ public String getRemoteUid()
 **定义**   
 
 ```java
-public void accept(final LocalStream localStream)
+void accept(final LocalStream localStream)
 ```
 
 **说明**
@@ -49,7 +49,7 @@ public void accept(final LocalStream localStream)
 **定义**   
 
 ```java
-public void reject()
+void reject()
 ```
 
 **说明**
@@ -64,7 +64,7 @@ public void reject()
 **定义**   
 
 ```java
-public void close() 
+void close() 
 ```
 
 **说明**
@@ -149,7 +149,7 @@ void setStatsListener(StatsListener listener)
 **示例**
 
 ```java
-mConversation.setStatsListener(new StatsListener() {
+mConversation.setStatsListener(new Conversation.StatsListener() {
     @Override
     public void onLocalStreamStatsReport(LocalStreamStatsReport localStreamStatsReport) {
         //获取本地视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等
@@ -171,7 +171,7 @@ mConversation.setStatsListener(new StatsListener() {
 **定义**   
 
 ```java
-public boolean startLocalRecording(File file)
+boolean startLocalRecording(File file)
 ```
 
 **说明**
@@ -200,7 +200,7 @@ public boolean startLocalRecording(File file)
 **定义**   
 
 ```java
-public boolean stopLocalRecording()
+void stopLocalRecording()
 ```
 
 **说明**

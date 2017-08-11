@@ -37,7 +37,7 @@ public void setMirror(boolean mirror)
 **定义**   
 
 ```java
-public void setVideoScaleType(VideoScaleType videoScaleType)
+void setVideoScaleType(VideoScaleType videoScaleType)
 ```
 
 **说明**

@@ -10,13 +10,13 @@ title: 本地视频录制
 
 ```java
 File file = getYourFile();
-mConversation.startVideoRecording(file);
+mConversation.startLocalRecording(file);
 ```
 
 ## 停止录制媒体流
 
-调用 `- stopVideoRecording` 方法可以停止本地媒体流的录制：
+调用 `stopLocalRecording()` 方法可以停止本地媒体流的录制：
 
 ```java
-mConversation.stopVideoRecording();
+mConversation.stopLocalRecording();
 ```

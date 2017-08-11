@@ -12,7 +12,7 @@ title: LocalStreamStatsReport
 **定义**   
 
 ```java
-public int getWidth()
+int getWidth()
 ```
 **说明**
 视频的宽度，以像素为单位。
@@ -30,7 +30,7 @@ public int getWidth()
 **定义**   
 
 ```java
-public int getHeight()
+int getHeight()
 ```
 **说明**
 视频的高度，以像素为单位。
@@ -48,7 +48,7 @@ public int getHeight()
 **定义**   
 
 ```java
-public int getFps()
+int getFps()
 ```
 **说明**
 视频帧率，在传输过程中帧率会根据采集情况/当前网络情况等不断变化。
@@ -66,7 +66,7 @@ public int getFps()
 **定义**   
 
 ```java
-public long getBytesSent()
+long getBytesSent()
 ```
 
 

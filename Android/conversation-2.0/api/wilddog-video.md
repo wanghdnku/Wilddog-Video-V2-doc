@@ -70,7 +70,7 @@ static WilddogVideo getInstance()
 **定义**   
 
 ```java
-    public void setToken(String token)
+void setToken(String token)
 ```
 
 **说明**
@@ -93,7 +93,7 @@ static WilddogVideo getInstance()
 **定义**   
 
 ```java
-    public void setListener(Listener listener)
+void setListener(Listener listener)
 ```
 
 **说明**
@@ -123,7 +123,7 @@ static WilddogVideo getInstance()
 **定义**   
 
 ```java
-public LocalStream createLocalStream(LocalStreamOptions options)
+LocalStream createLocalStream(LocalStreamOptions options)
 ```
 
 **说明**
@@ -154,7 +154,7 @@ localStream = video.createLocalStream(options);
 **定义**   
 
 ```java
-public Conversation call(String uid, LocalStream localStream, String data)
+Conversation call(String uid, LocalStream localStream, String data)
 ```
 
 
@@ -189,7 +189,7 @@ video.call(uid,localStream, "data");
 **定义**   
 
 ```java
-public void start()
+void start()
 ```
 
 **说明**
@@ -212,7 +212,7 @@ public void start()
 **定义**   
 
 ```java
-public void stop()
+void stop()
 ```
 
 **说明**

@@ -9,11 +9,14 @@ title: LocalStream
 ---
 
 ## 方法
+
 ### setOnFrameListener()
 
-**定义**   
-
+**定义**
+   
+```java
 void setOnFrameListener(WilddogVideo.CameraFrameListener listener)
+```
 
 **说明**
 
@@ -35,6 +38,51 @@ localStream.setOnFrameListener(new WilddogVideo.CameraFrameListener() {
     //frameProcess(bytes);
 }
 });
+```
+
+</br>
+
+---
+### close()
+
+**定义**   
+
+```java
+void close()
+```
+
+**说明**
+
+关闭本地流,释放占用资源。
+
+
+**示例**
+
+```java
+localStream.close();
+```
+
+</br>
+
+---
+### isClosed()
+
+**定义**   
+
+```java
+boolean isClosed()
+```
+
+**说明**
+
+判断当前视频流是否已经关闭,如果没有关闭,可以关闭,并且释放占用资源。
+
+
+**示例**
+
+```java
+if(!localStream.isClosed()){
+localStream.close();}
 ```
 
 </br>

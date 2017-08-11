@@ -12,7 +12,7 @@ title: RemoteStreamStatsReport
 **定义**   
 
 ```java
-public String getUserId()
+String getUserId()
 ```
 **说明**
 统计信息对应的用户 ID。
@@ -30,7 +30,7 @@ public String getUserId()
 **定义**   
 
 ```java
-public int getWidth()
+int getWidth()
 ```
 **说明**
 视频的宽度，以像素为单位。在视频通话过程中此数据会根据视频画面大小的自适应调整而改变。
@@ -48,7 +48,7 @@ public int getWidth()
 **定义**   
 
 ```java
-public int getHeight()
+int getHeight()
 ```
 **说明**
 视频的高度，以像素为单位。在视频通话过程中此数据会根据视频画面大小的自适应调整而改变。
@@ -66,7 +66,7 @@ public int getHeight()
 **定义**   
 
 ```java
-public int getFps()
+int getFps()
 ```
 **说明**
 视频帧率，在传输过程中帧率会根据采集情况/当前网络情况等不断变化。
@@ -84,7 +84,7 @@ public int getFps()
 **定义**   
 
 ```java
-public long getBytesReceived()
+long getBytesReceived()
 ```
 
 
@@ -101,7 +101,7 @@ public long getBytesReceived()
 **定义**   
 
 ```java
-public int getBitsReceivedRate()
+int getBitsReceivedRate()
 ```
 **说明**
 对端视频流的接收速率，以 kbps 为单位。
@@ -119,7 +119,7 @@ public int getBitsReceivedRate()
 **定义**   
 
 ```java
-public int getDelay()
+int getDelay()
 ```
 **说明**
 对端视频的延迟，以毫秒为单位。。

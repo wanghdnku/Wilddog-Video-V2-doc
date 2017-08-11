@@ -5,12 +5,12 @@ title: LocalStreamOptions.Builder
 
 ## 方法
 
-### videoEnabled(boolean)
+### captureVideo(boolean)
 
 **定义**   
 
 ```java
-public Builder videoEnabled(boolean enable)
+Builder captureVideo(boolean enable)
 ```
 
 **说明**
@@ -31,12 +31,12 @@ public Builder videoEnabled(boolean enable)
 
 ---
 
-### audioEnabled(boolean)
+### captureAudio(boolean)
 
 **定义**   
 
 ```java
-public Builder audioEnabled(boolean enable)
+Builder captureAudio(boolean enable)
 ```
 
 **说明**
@@ -83,12 +83,38 @@ public Builder dimension(Dimension dimension)
 
 ---
 
+### maxFps(int)
+
+**定义**   
+
+```java
+void maxFps(int maxFps)
+```
+
+**说明**
+
+设置视频传输的最大帧率。
+
+**参数**
+
+| 参数名 | 描述 |
+|---|---|
+|maxFps|当前视频传输的最大帧率。|
+
+**返回值**
+
+当前媒体采集参数构建对象。
+
+</br>
+
+---
+
 ### build()
 
 **定义**   
 
 ```java
-public LocalStreamOptions build()
+LocalStreamOptions build()
 ```
 
 **说明**

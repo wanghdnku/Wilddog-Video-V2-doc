@@ -1,4 +1,4 @@
-title: RTCStatsListener
+title: StatsListener
 ---
 
 统计信息接口，在回调方法中可以获取本地视频流以及对端视频流的统计信息。

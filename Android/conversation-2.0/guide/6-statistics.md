@@ -19,12 +19,12 @@ mConversation.setStatsListener(rtcStatsListener);
 
 ```java
 
-- (void)conversation:(WDGVideoConversation *)conversation didUpdateLocalStreamStatsReport:(WDGVideoLocalStreamStatsReport *)report {
-    // report.width
-    // report.height
-    // report.FPS
-    // report.bytesSent
-    // report.bitsSentRate
+public void onLocalStreamStatsReport(LocalStreamStatsReport localStreamStatsReport) {
+    // localStreamStatsReport.width
+    // localStreamStatsReport.height
+    // localStreamStatsReport.FPS
+    // localStreamStatsReport.bytesSent
+    // localStreamStatsReport.bitsSentRate
 }
 ```
 
@@ -33,12 +33,12 @@ mConversation.setStatsListener(rtcStatsListener);
 实现远程视频数据统计接口。
 
 ```java
-- (void)conversation:(WDGVideoConversation *)conversation didUpdateRemoteStreamStatsReport:(WDGVideoRemoteStreamStatsReport *)report {
-    // report.width
-    // report.height
-    // report.FPS
-    // report.bytesReceived
-    // report.bitsReceivedRate
-    // report.delay
+public void onRemoteStreamStatsReport(RemoteStreamStatsReport remoteStreamStatsReport) { 
+    // remoteStreamStatsReport.width
+    // remoteStreamStatsReport.height
+    // remoteStreamStatsReport.FPS
+    // remoteStreamStatsReport.bytesReceived
+    // remoteStreamStatsReport.bitsReceivedRate
+    // remoteStreamStatsReport.delay
 }
 ```

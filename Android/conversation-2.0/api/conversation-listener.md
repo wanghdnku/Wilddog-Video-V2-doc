@@ -5,12 +5,12 @@ title: Conversation.Listener
 
 ## 方法
 
-### onResponse(CallStatus)
+### onCallResponse(CallStatus)
 
 **定义**   
 
 ```java
-onResponse(CallStatus status)
+onCallResponse(CallStatus status)
 ```
 
 **说明**
@@ -21,7 +21,7 @@ onResponse(CallStatus status)
 
 | 参数名 | 描述 |
 |---|---|
-|status|[CallStatus](/video/Android/api/call-status.html),连接建立成功后创建的视频通话对象|
+|status|[CallStatus](/video/Android/api/call-status.html),连接建立成功后对方返回的响应状态|
 
 </br>
 

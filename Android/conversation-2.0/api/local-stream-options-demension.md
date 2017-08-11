@@ -10,7 +10,7 @@
 **定义**   
 
 ```java
-public int getWidth()
+int getWidth()
 ```
 
 **说明**
@@ -30,7 +30,7 @@ public int getWidth()
 **定义**   
 
 ```java
-public int getHeight()
+int getHeight()
 ```
 
 **说明**

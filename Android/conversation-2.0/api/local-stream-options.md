@@ -5,12 +5,12 @@ title: LocalStreamOptions
 
 ## 方法
 
-### isVideoEnabled()
+### captureVideo()
 
 **定义**   
 
 ```java
-public boolean isVideoEnabled()
+boolean captureVideo()
 ```
 
 **说明**
@@ -22,12 +22,12 @@ public boolean isVideoEnabled()
 
 ---
 
-### isAudioEnabled()
+### captureAudio()
 
 **定义**   
 
 ```java
-public boolean isAudioEnabled()
+boolean captureAudio()
 ```
 
 **说明**
@@ -44,7 +44,7 @@ public boolean isAudioEnabled()
 **定义**   
 
 ```java
-public Dimension getDimension()
+Dimension getDimension()
 ```
 
 **说明**
@@ -54,6 +54,25 @@ public Dimension getDimension()
 **返回值**
 
 当前视频分辨率。
+
+</br>
+
+---
+### getMaxFps()
+
+**定义**   
+
+```java
+int getMaxFps()
+```
+
+**说明**
+
+传输视频的最大帧率。
+
+**返回值**
+
+当前视频的最大帧率的值。
 
 </br>
 
