@@ -1,7 +1,7 @@
-title: WilddogVideo.Listener
+title: WilddogVideo.CameraFrameListener
 ----------------------------
 
-`WilddogVideo` 呼叫状态回调,当 `WilddogVideo` 收到呼叫会触发相应的方法。
+[WilddogVideo](/conversation/android/api/wilddog-video.html) 的代理方法，用于获取并处理视频流。
 
 ## 方法
 

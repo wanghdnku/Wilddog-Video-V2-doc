@@ -48,7 +48,7 @@ void setVideoScaleType(VideoScaleType videoScaleType)
 
 | 参数名 | 描述 |
 |---|---|
-|videoScaleType|默认为`SCALE_ASPECT_FIT`。 |
+|videoScaleType|[VideoScaleType](conversation/Android/api/video-scale-type.html),默认为`SCALE_ASPECT_FIT`。 |
 
 </br>
 

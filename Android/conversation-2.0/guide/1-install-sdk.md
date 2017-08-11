@@ -28,14 +28,14 @@ android {
 
 ### 初始化 Video SDK
 
-`WilddogVideo` 是 WilddogVideo SDK 功能的主入口。用户在使用 SDK 之前，要初始化 `WilddogVideo` 实例，以连接野狗服务器。
+[WilddogVideo](/conversation/android/api/wilddog-video.html) 是 WilddogVideo SDK 功能的主入口。用户在使用 SDK 之前，要初始化 `WilddogVideo` 实例，以连接野狗服务器。
 
 初始化之前，打开控制面板 - 应用 - 视频通话 - 配置，获取 VideoAppID。
 
 初始化 `WilddogVideo` 之前，要先经过 [野狗身份认证](/auth/Android/index.html)。开发者可以根据需要选择匿名登录、邮箱密码、第三方或自定义认证等方式进行身份认证。
 
+成功通过身份认证后，用户将获得 `uid` 以及 `token`。以匿名方式登录后初始化 [WilddogVideo](/conversation/android/api/wilddog-video.html) 为例：
 
-例如，以匿名方式登录后初始化 `WilddogVideo` ：
 
 ```java
 @Override
@@ -113,7 +113,7 @@ Warning:WARNING: Dependency org.json:json:20090211 is ignored for debug as it ma
 
 ### 设置代理
 
-设置 `WDGVideo` 的代理用于监听通话请求：
+设置 [WilddogVideo](/conversation/android/api/wilddog-video.html) 的代理<[WilddogVideo.Listener](/conversation/iOS/api/wilddog-video-listener.html)> 用于监听通话请求：
 
 ```java
      video.setListener(new WilddogVideo.Listener() {

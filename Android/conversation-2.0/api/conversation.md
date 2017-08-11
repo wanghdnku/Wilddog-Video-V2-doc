@@ -92,7 +92,7 @@ void setConversationListener(Conversation.Listener listener)
 
 | 参数名 | 描述 |
 |---|---|
-|listener|视频通话状态监听[Conversation.Listener](/video/Android/api/conversation-listener.html),参与者连接成功后会触发 onResponse 事件|
+|listener|视频通话状态监听[Conversation.Listener](/conversation/Android/api/conversation-listener.html),参与者连接成功后会触发 onResponse 事件|
 
 
 **示例**
@@ -143,7 +143,7 @@ void setStatsListener(StatsListener listener)
 
 | 参数名 | 描述 |
 |---|---|
-|listener|[StatsListener](/video/Android/api/stats-listener.html)，视频通话统计监听|
+|listener|[StatsListener](/conversation/Android/api/stats-listener.html)，视频通话统计监听|
 
 
 **示例**

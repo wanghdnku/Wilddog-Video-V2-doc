@@ -26,7 +26,7 @@ void setOnFrameListener(WilddogVideo.CameraFrameListener listener)
 
 | 参数名 | 描述 |
 |---|---|
-|listener| [CameraFrameListener](/video/Android/api/camera-frame-listener.html) ,相机帧数据获取接口|
+|listener| [CameraFrameListener](/conversation/Android/api/camera-frame-listener.html) ,相机帧数据获取接口|
 
 **示例**
 

@@ -21,7 +21,7 @@ void onLocalStreamStatsReport(LocalStreamStatsReport localStreamStatsReport);
 
 | 参数名 | 描述 |
 |---|---|
-|localStreamStatsReport|[LocalStreamStatsReport](/video/Android/api/local-stream-stats-report.html)，本地视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
+|localStreamStatsReport|[LocalStreamStatsReport](/conversation/Android/api/local-stream-stats-report.html)，本地视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
 
 </br>
 
@@ -44,6 +44,6 @@ void onRemoteStreamStatsReport(RemoteStreamStatsReport remoteStreamStatsReport);
 
 | 参数名 | 描述 |
 |---|---|
-|remoteStreamStatsReport|[RemoteStreamStatsReport](/video/Android/api/remote-stream-stats-report.html)，对端视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
+|remoteStreamStatsReport|[RemoteStreamStatsReport](/conversation/Android/api/remote-stream-stats-report.html)，对端视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
 
 

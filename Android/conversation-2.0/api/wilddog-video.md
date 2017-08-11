@@ -53,7 +53,7 @@ static WilddogVideo getInstance()
 
 **返回值**
 
-[WilddogVideo](/video/Android/api/wilddog-video.html)
+[WilddogVideo](/conversation/Android/api/wilddog-video.html)
 
 **示例**
 
@@ -104,7 +104,7 @@ void setListener(Listener listener)
 
 | 参数名 | 描述 |
 |---|---|
-|listener|[WilddogVideo.Listener](/video/Android/api/wilddog-video-listener.html),视频通话邀请监听,监听当前邀请状态|
+|listener|[WilddogVideo.Listener](/conversation/Android/api/wilddog-video-listener.html),视频通话邀请监听,监听当前邀请状态|
 
 **示例**
 
@@ -138,7 +138,7 @@ LocalStream createLocalStream(LocalStreamOptions options)
 
 **返回值**
 
-[LocalStream](/video/Android/api/local-stream.html)
+[LocalStream](/conversation/Android/api/local-stream.html)
 
 **示例**
 
@@ -173,7 +173,7 @@ Conversation call(String uid, LocalStream localStream, String data)
 
 **返回值**
 
-[Conversation](/video/Android/api/conversation.html)
+[Conversation](/conversation/Android/api/conversation.html)
 
 **示例**
 

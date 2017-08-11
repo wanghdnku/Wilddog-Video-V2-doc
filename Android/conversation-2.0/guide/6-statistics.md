@@ -6,7 +6,7 @@ title: 媒体流统计
 
 ### 设置代理
 
-使用 `Conversation` 中的 `StatsListener` 接口可以实时获取视频的宽、高、帧率、发送接收总大小、比特率、延迟等。
+使用 [Conversation](/conversation/android/api/conversation.html) 中的 [StatsListener](/conversation/android/api/stats-listener.html) 接口可以实时获取视频的宽、高、帧率、发送接收总大小、比特率、延迟等。
 
 ```java
 // VideoConversation 是邀请成功或者接受邀请成功时返回的参数。
