@@ -31,7 +31,7 @@ title: WDGConversation
 
 **说明**
 
-符合 [WDGConversationDelegate](/Conversation/iOS/api/WDGConversationDelegate.html) 协议的代理，用于通知 `WDGConversation` 发生的事件。
+符合 [WDGConversationDelegate](/conversation/iOS/api/WDGConversationDelegate.html) 协议的代理，用于通知 `WDGConversation` 发生的事件。
 
 </br>
 
@@ -47,7 +47,7 @@ title: WDGConversation
 
 **说明**
 
-符合 [WDGConversationStatsDelegate](/Conversation/iOS/api/WDGConversationStatsDelegate.html) 协议的代理。用于获取媒体流的统计数据。
+符合 [WDGConversationStatsDelegate](/conversation/iOS/api/WDGConversationStatsDelegate.html) 协议的代理。用于获取媒体流的统计数据。
 
 </br>
 
@@ -71,7 +71,7 @@ title: WDGConversation
 
 参数名 | 说明 
 ---|---
-localStream | [WDGLocalStream](/Conversation/iOS/api/WDGLocalStream.html) 实例，表示本地媒体流。
+localStream | [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例，表示本地媒体流。
 
 </br>
 

@@ -1,7 +1,7 @@
 title: WDGRemoteStream
 ---
 
-表示通过 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 传来的远端音频和视频流。
+表示通过 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 传来的远端音频和视频流。
 
 ## 属性
 
@@ -65,13 +65,13 @@ title: WDGRemoteStream
 
 **说明**
 
-绑定媒体流与视图，使媒体流的视频在指定的 [WDGVideoView](/Conversation/iOS/api/WDGVideoView.html) 中显示。
+绑定媒体流与视图，使媒体流的视频在指定的 [WDGVideoView](/conversation/iOS/api/WDGVideoView.html) 中显示。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view | [WDGVideoView](/Conversation/iOS/api/WDGVideoView.html) 实例，媒体流在该视图中播放。
+view | [WDGVideoView](/conversation/iOS/api/WDGVideoView.html) 实例，媒体流在该视图中播放。
 
 </br>
 
@@ -87,10 +87,10 @@ view | [WDGVideoView](/Conversation/iOS/api/WDGVideoView.html) 实例，媒体�
 
 **说明**
 
-解除媒体流与指定的 [WDGVideoView](/Conversation/iOS/api/WDGVideoView.html) 的绑定，停止播放。
+解除媒体流与指定的 [WDGVideoView](/conversation/iOS/api/WDGVideoView.html) 的绑定，停止播放。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-view | [WDGVideoView](/Conversation/iOS/api/WDGVideoView.html) 实例，流在该视图中播放。
+view | [WDGVideoView](/conversation/iOS/api/WDGVideoView.html) 实例，流在该视图中播放。

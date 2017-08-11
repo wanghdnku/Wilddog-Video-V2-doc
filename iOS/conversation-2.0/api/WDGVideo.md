@@ -15,7 +15,7 @@ title: WDGVideo
 
 **说明**
 
-符合 [WDGVideoDelegate](/Conversation/iOS/api/WDGVideoDelegate.html) 协议的代理，用于接收视频通话邀请、在 token 错误时接收错误信息。
+符合 [WDGVideoDelegate](/conversation/iOS/api/WDGVideoDelegate.html) 协议的代理，用于接收视频通话邀请、在 token 错误时接收错误信息。
 
 </br>
 
@@ -130,17 +130,17 @@ token | 通过 [WilddogAuth](https://docs.wilddog.com/auth/iOS/index.html) 登�
 
 **说明**
 
-创建本地的媒体流，通过传入一个 [WDGLocalStreamOptions](/Conversation/iOS/api/WDGLocalStreamOptions.html) 实例配置媒体流。
+创建本地的媒体流，通过传入一个 [WDGLocalStreamOptions](/conversation/iOS/api/WDGLocalStreamOptions.html) 实例配置媒体流。
 
 **参数**
 
  参数名 | 说明 
 ---|---
-options | [WDGLocalStreamOptions](/Conversation/iOS/api/WDGLocalStreamOptions.html) 实例，用于配置本地视频和音频。
+options | [WDGLocalStreamOptions](/conversation/iOS/api/WDGLocalStreamOptions.html) 实例，用于配置本地视频和音频。
 
 **返回值**
 
-[WDGLocalStream](/Conversation/iOS/api/WDGLocalStream.html) 实例。
+[WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例。
 
 </br>
 
@@ -163,12 +163,12 @@ options | [WDGLocalStreamOptions](/Conversation/iOS/api/WDGLocalStreamOptions.ht
  参数名 | 说明 
 ---|---
 uid         | 被叫方的 User ID。
-localStream | [WDGLocalStream](/Conversation/iOS/api/WDGLocalStream.html) 实例，代表主叫方的本地媒体流。
+localStream | [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 实例，代表主叫方的本地媒体流。
 data        | 随邀请传递的字符串类型的数据，可以为空。
 
 **返回值**
 
-[WDGConversation](/Conversation/iOS/api/WDGConversation.html) 实例，代表主叫方创建的视频通话。
+[WDGConversation](/conversation/iOS/api/WDGConversation.html) 实例，代表主叫方创建的视频通话。
 
 </br>
 
