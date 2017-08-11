@@ -21,7 +21,7 @@ onCallResponse(CallStatus status)
 
 | 参数名 | 描述 |
 |---|---|
-|status|[CallStatus](/video/Android/api/call-status.html),连接建立成功后对方返回的响应状态|
+|status|[CallStatus](/conversation/Android/api/call-status.html),连接建立成功后对方返回的响应状态|
 
 </br>
 

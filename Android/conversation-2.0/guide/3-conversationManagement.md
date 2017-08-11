@@ -12,7 +12,7 @@ title: 管理视频通话
 * localStream: 通话发起方的本地媒体流；
 * data: 用户自定义信息，可以为空。
 
-调用该方法返回 `Conversation` 实例，用于控制本次视频通话。
+调用该方法返回 [Conversation](/conversation/android/api/conversation.html) 实例，用于控制本次视频通话。
 
 ```java
 mConversation = video.call(remoteUid,localStream,"conversationDemo");
@@ -22,7 +22,7 @@ mConversation = video.call(remoteUid,localStream,"conversationDemo");
 
 ## 收到通话请求
 
-其他用户发来通话请求时，用户可以从 `WilddogVideo` 的listener得到通知，并获得 `Conversation` 实例：
+其他用户发来通话请求时，用户可以从 [WilddogVideo](/conversation/android/api/wilddog-video.html) 的listener得到通知，并获得 [Conversation](/conversation/android/api/conversation.html) 实例：
 
 ```java
 
@@ -36,7 +36,7 @@ public void onCalled(Conversation conversation, String s) {
 
 ## 设置通话代理
 
-设置 `Conversation` 的代理用于监听通话状态。
+设置 [Conversation](/conversation/android/api/conversation.html) 的代理[Conversation.Listener](/conversation/android/api/conversation-listener.html)用于监听通话状态。
 
 ```java
 conversation.setConversationListener(new Conversation.Listener() {
@@ -62,7 +62,7 @@ conversation.setConversationListener(new Conversation.Listener() {
 });
 ```
 
-`WDGConversationDelegate` 包含四个方法：
+[Conversation.Listener](/conversation/android/api/conversation-listener.html) 包含四个方法：
 
 方法名  | 说明
 ------ | ------
@@ -73,7 +73,7 @@ conversation.setConversationListener(new Conversation.Listener() {
 
 ## 接受／拒绝通话请求
 
-使用 `accept(final LocalStream localStream)` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](placeholder)：
+使用 `accept(final LocalStream localStream)` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](/conversation/android/guide/2-mediaStream.html)：
 
 ```java
 mConversation.accept(localStream);

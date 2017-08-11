@@ -11,7 +11,7 @@ title: CameraFrameListener
 **定义**   
 
 ```java
-void onByteFrame(byte[] data, int width, int height)
+onByteFrame(byte[] data, int width, int height, int rotation, long timestatmp)
 ```
 
 **说明**
@@ -25,6 +25,8 @@ void onByteFrame(byte[] data, int width, int height)
 |data|byte 数组，当前相机的预览帧数据，通过操作此数组可以对视频画面进行美颜等处理|
 |width|int 型，预览帧宽度|
 |height|int 型，预览帧高度|
+|rotation|int 型，预览帧旋转角度|
+|timestatmp|long 型，获取预览帧时间戳|
 
 
 

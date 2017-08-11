@@ -21,7 +21,7 @@ void onLocalStats(LocalStats localStats);
 
 | 参数名 | 描述 |
 |---|---|
-|localStats|[LocalStats](/video/Android/api/local-stats.html)，本地视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
+|localStats|[LocalStats](/conference/Android/api/local-stats.html)，本地视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
 
 </br>
 
@@ -44,6 +44,6 @@ void onRemoteStats(RemoteStats remoteStats);
 
 | 参数名 | 描述 |
 |---|---|
-|remoteStats|[RemoteStats](/video/Android/api/remote-stats.html)，对端视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
+|remoteStats|[RemoteStats](/conference/Android/api/remote-stats.html)，对端视频流统计信息，包括视频的宽、高、帧率、发送接收总大小、比特率、延迟等|
 
 

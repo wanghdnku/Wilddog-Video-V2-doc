@@ -73,5 +73,5 @@ Android 快速入门是使用 Android Studio 创建的 Android 工程，使用 `
 <img src='/images/video_quickstart_android_conversation.jpg' alt="video_quickstart_android_conversation" width="300" >
 
 
-更多详细信息请见 [完整指南](/video/Android/guide/core.html) 和  [API 文档](/video/Android/api/wilddog-video.html)。
+更多详细信息请见 [完整指南](/conversation/Android/guide/core.html) 和  [API 文档](/conversation/Android/api/wilddog-video.html)。
 

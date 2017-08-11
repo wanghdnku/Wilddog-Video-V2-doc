@@ -21,7 +21,7 @@ void onStreamAdded(RemoteStream remoteStream)
 
 | 参数名 | 描述 |
 |---|---|
-|remoteStream|[RemoteStream](/video/Android/api/remote-stream.html),远端参与者发送的媒体流。|
+|remoteStream|[RemoteStream](/conference/Android/api/remote-stream.html),远端参与者发送的媒体流。|
 
 </br>
 
@@ -43,8 +43,8 @@ void onConnectFailed(Participant participant,VideoException exception)
 
 | 参数名 | 描述 |
 |---|---|
-|participant|[Participant](/video/Android/api/participant.html)连接失败的远端参与者对象|
-|exception|[VideoException](/video/Android/api/video-exception.html),连接失败错误信息|
+|participant|[Participant](/conference/Android/api/participant.html)连接失败的远端参与者对象|
+|exception|[VideoException](/conference/Android/api/video-exception.html),连接失败错误信息|
 
 </br>
 
@@ -67,8 +67,8 @@ void onDisconnected(Participant participant,VideoException exception)
 
 | 参数名 | 描述 |
 |---|---|
-|participant|[Participant](/video/Android/api/participant.html)断开连接的远端参与者对象|
-|exception|[VideoException](/video/Android/api/video-exception.html),连接断开错误信息|
+|participant|[Participant](/conference/Android/api/participant.html)断开连接的远端参与者对象|
+|exception|[VideoException](/conference/Android/api/video-exception.html),连接断开错误信息|
 
 </br>
 

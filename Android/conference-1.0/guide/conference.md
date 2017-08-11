@@ -1,7 +1,7 @@
 title: 多人视频会议
 ---
 
-本篇文档介绍开发多人视频会议的主要环节，包括 [创建视频会议](/video/Android/guide/conference.html#创建视频会议)、[管理其他参与者](/video/Android/guide/conference.html#管理其他参与者) 和 [加入视频会议相关](/video/Android/guide/conference.html#加入视频会议相关)。
+本篇文档介绍开发多人视频会议的主要环节，包括 [创建视频会议](/conference/Android/guide/conference.html#创建视频会议)、[管理其他参与者](/video/Android/guide/conference.html#管理其他参与者) 和 [加入视频会议相关](/conference/Android/guide/conference.html#加入视频会议相关)。
 
 ## 创建视频会议
 
@@ -9,9 +9,9 @@ title: 多人视频会议
 
 ### 配置和预览本地媒体流
 
-本地媒体流( [Local Stream](/video/Android/guide/core.html#Local-Stream) )包括音频和视频，发起或加入会议前需要进行配置，成功加入一个会议后，该媒体流会发送给其他参与者。
+本地媒体流( [Local Stream](/conference/Android/guide/core.html#Local-Stream) )包括音频和视频，发起或加入会议前需要进行配置，成功加入一个会议后，该媒体流会发送给其他参与者。
 
-例如，创建一个只有视频且分辨率为 320X240 的流，并展示到 `WilddogVideoView` 上：
+例如，创建一个只有视频且分辨率为 640x480 的流，并展示到 `WilddogVideoView` 上：
 
 ```java
     //获取视频播放控件
@@ -19,7 +19,7 @@ title: 多人视频会议
     // 如果没有获得摄像头权限或无摄像头，则无法展示。
     LocalStreamOptions.Builder builder = new LocalStreamOptions.Builder();
 
-    LocalStreamOptions options = builder.height(240).width(320).build();
+    LocalStreamOptions options = builder.build();
     localStream = video.createLocalStream(options,new CompleteListener() {
         @Override
         public void onCompleted(VideoException e) {
