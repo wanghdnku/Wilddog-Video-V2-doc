@@ -85,4 +85,4 @@ title: 视频通话 V2
 <img src='/images/video_quickstart_ios_conversation.jpg' alt="video_quickstart_ios_conversation" width="300">
 
 
-更多详细功能请见 [完整指南](/conversation/iOS/guide/0-concepts.html) 和 [API 文档](/conversation/iOS/api/WDGVideo.html)。
+更多详细功能请见 [完整指南](/Conversation/iOS/guide/0-concepts.html) 和 [API 文档](/Conversation/iOS/api/WDGVideo.html)。

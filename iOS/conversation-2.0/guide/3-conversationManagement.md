@@ -12,7 +12,7 @@ title: 管理视频通话
 * localStream: 通话发起方的本地媒体流；
 * data: 用户自定义信息，可以为空。
 
-调用该方法返回 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 实例，用于控制本次视频通话。
+调用该方法返回 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 实例，用于控制本次视频通话。
 
 ```objectivec
 self.conversation = [self.video callWithUid:@"remote-uid" localStream:self.localStream data:@"custom-data";
@@ -23,7 +23,7 @@ self.conversation.delegate = self;
 
 ## 收到通话请求
 
-其他用户发来通话请求时，用户可以从 [WDGVideo](/conversation/iOS/api/WDGVideo.html) 的代理得到通知，并获得 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 实例：
+其他用户发来通话请求时，用户可以从 [WDGVideo](/Conversation/iOS/api/WDGVideo.html) 的代理得到通知，并获得 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 实例：
 
 ```objectivec
 - (void)wilddogVideo:(WDGVideo *)video didReceiveCallWithConversation:(WDGConversation *)conversation data:(NSString *)data {
@@ -35,13 +35,13 @@ self.conversation.delegate = self;
 
 ## 设置通话代理
 
-设置 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 的代理 <[WDGConversationDelegate](/conversation/iOS/api/WDGConversationDelegate.html)> 用于监听通话状态。
+设置 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 的代理 <[WDGConversationDelegate](/Conversation/iOS/api/WDGConversationDelegate.html)> 用于监听通话状态。
 
 ```objectivec
 self.conversation.delegate = self;
 ```
 
-[WDGConversationDelegate](/conversation/iOS/api/WDGConversationDelegate.html) 包含四个方法：
+[WDGConversationDelegate](/Conversation/iOS/api/WDGConversationDelegate.html) 包含四个方法：
 
 方法名  | 说明
 ------ | ------
@@ -52,7 +52,7 @@ self.conversation.delegate = self;
 
 ## 接受／拒绝通话请求
 
-使用 `-[WDGConversation acceptWithLocalStream:]` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](/conversation/iOS/guide/1-mediaStream.html)：
+使用 `-[WDGConversation acceptWithLocalStream:]` 来接受通话请求，该方法需要传入本地媒体流，本地流的创建请参考 [创建媒体流](/Conversation/iOS/guide/1-mediaStream.html)：
 
 ```objectivec
 [self.conversation acceptWithLocalStream:self.localStream];

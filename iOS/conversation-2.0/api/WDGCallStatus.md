@@ -1,7 +1,7 @@
 title: WDGCallStatus
 ---
 
-表示 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 状态的枚举类型。
+表示 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 状态的枚举类型。
 
 ## 常量
 

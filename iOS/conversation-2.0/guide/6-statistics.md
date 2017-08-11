@@ -6,7 +6,7 @@ title: 媒体流统计
 
 ## 设置代理
 
-设置 [WDGConversation](/conversation/iOS/api/WDGConversation.html) 的代理 <[WDGConversationStatsDelegate](/conversation/iOS/api/WDGConversationStatsDelegate.html)> 用于实时获取视频流的宽、高、帧率、发送接收总大小、比特率、延迟等信息：
+设置 [WDGConversation](/Conversation/iOS/api/WDGConversation.html) 的代理 <[WDGConversationStatsDelegate](/Conversation/iOS/api/WDGConversationStatsDelegate.html)> 用于实时获取视频流的宽、高、帧率、发送接收总大小、比特率、延迟等信息：
 
 ```objectivec
 self.conversation.statsDelegate = self;

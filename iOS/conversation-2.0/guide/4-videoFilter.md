@@ -5,7 +5,7 @@ title: 美颜滤镜
 
 ## 设置代理
 
-设置 [WDGLocalStream](/conversation/iOS/api/WDGLocalStream.html) 的代理 <[WDGLocalStreamDelegate](/conversation/iOS/api/WDGLocalStreamDelegate.html)> 用于处理本地视频流。
+设置 [WDGLocalStream](/Conversation/iOS/api/WDGLocalStream.html) 的代理 <[WDGLocalStreamDelegate](/Conversation/iOS/api/WDGLocalStreamDelegate.html)> 用于处理本地视频流。
 
 ```objectivec
 self.localStream.delegate = self;
