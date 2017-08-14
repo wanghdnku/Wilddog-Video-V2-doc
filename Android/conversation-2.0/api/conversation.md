@@ -24,6 +24,10 @@ String getRemoteUid()
 
 ---
 
+
+
+## 方法
+
 ### accept(LocalStream)
 
 **定义**   
@@ -74,8 +78,6 @@ void close()
 
 ---
 
-## 方法
-
 ### setConversationListener(Conversation.Listener)
 
 **定义**   
@@ -98,29 +100,27 @@ void setConversationListener(Conversation.Listener listener)
 **示例**
 
 ```java
- @Override
+mConversation.setConversationListener(new Conversation.Listener() {
+    @Override
+    public void onResponse(CallStatus status) {
+      //呼叫状态变更的回调                 
+    }
 
-    mConversation.setConversationListener(new Conversation.Listener() {
-        @Override
-        public void onResponse(CallStatus status) {
-          //呼叫状态变更的回调                 
-        }
+    @Override
+     public void onStreamReceived(RemoteStream stream); {
+       //收到远程流的回调
+     }
 
-        @Override
-        public void onStreamReceived(RemoteStream stream); {
-          //收到远程流的回调
-        }
+     @Override
+     public void onError(WilddogVideoError error) {
+       //错误信息的回调
+     }
 
-        @Override
-        public void onError(WilddogVideoError error) {
-          //错误信息的回调
-        }
-
-        @Override
-        public void onClosed() {
-          //会话结束的回调
-        }
-    });
+     @Override
+     public void onClosed() {
+       //会话结束的回调
+     }
+});
 ```
 
 </br>
@@ -188,7 +188,7 @@ boolean startLocalRecording(File file)
 **示例**
 
 ```java
-	mConversation.startLocalRecording(saveFile);
+mConversation.startLocalRecording(saveFile);
 ```
 
 </br>
@@ -210,7 +210,7 @@ void stopLocalRecording()
 **示例**
 
 ```java
-	mConversation.stopLocalRecording();
+mConversation.stopLocalRecording();
 ```
 
 </br>

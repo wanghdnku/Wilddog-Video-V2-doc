@@ -1,4 +1,4 @@
-+title: LocalStreamOptions.Dimension
+title: LocalStreamOptions.Dimension
 -------------------------
 
 视频分辨率对象,可以获取宽和高。

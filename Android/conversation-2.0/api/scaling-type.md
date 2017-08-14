@@ -5,7 +5,7 @@ title: ScalingType
 
 ## 常量
 
-### VideoScaleType
+### ScalingType
 
 **定义**
 
