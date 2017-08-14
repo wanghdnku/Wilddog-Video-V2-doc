@@ -32,12 +32,12 @@ public void setMirror(boolean mirror)
 
 ---
 
-### setVideoScaleType(VideoScaleType)
+### setVideoScaleType(ScalingType)
 
 **定义**   
 
 ```java
-void setVideoScaleType(VideoScaleType videoScaleType)
+void setVideoScaleType(ScalingType videoScaleType)
 ```
 
 **说明**
@@ -48,7 +48,7 @@ void setVideoScaleType(VideoScaleType videoScaleType)
 
 | 参数名 | 描述 |
 |---|---|
-|videoScaleType|[VideoScaleType](conversation/Android/api/video-scale-type.html),默认为`SCALE_ASPECT_FIT`。 |
+|videoScaleType|[ScalingType](conversation/Android/api/scaling-type.html),默认为`SCALE_ASPECT_FIT`。 |
 
 </br>
 

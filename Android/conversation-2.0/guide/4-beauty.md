@@ -6,7 +6,7 @@ title: 美颜功能
 
 ### 获取原始视频流接口
 
-设置 [LocalStream](/conversation/android/api/LocalStream.html) 的 [WilddogVideo.CameraFrameListener](/conversation/android/api/camera-frame-listener.html) 来获取本地视频流，可以对视频流做美颜处理再返回给野狗 SDK。
+设置 [LocalStream](/conversation/Android/api/LocalStream.html) 的 [WilddogVideo.CameraFrameListener](/conversation/Android/api/camera-frame-listener.html) 来获取本地视频流，可以对视频流做美颜处理再返回给野狗 SDK。
 
 ```java
 localStream = video.createLocalStream(localStreamOptions);

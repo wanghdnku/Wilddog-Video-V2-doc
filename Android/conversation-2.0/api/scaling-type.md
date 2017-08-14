@@ -1,4 +1,4 @@
-title: VideoScaleType
+title: ScalingType 
 ---
 
 视频在UI控件上显示的样式。

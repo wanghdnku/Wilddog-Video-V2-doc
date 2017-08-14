@@ -6,7 +6,7 @@ title: 媒体流
 
 ### 创建媒体流
 
-本地媒体流包含了本地设备所采集的音频、视频信息，是视频通话所需要的基本数据。本地媒体流需要通过 [WilddogVideo](/conversation/android/api/wilddog-video.html)  创建：
+本地媒体流包含了本地设备所采集的音频、视频信息，是视频通话所需要的基本数据。本地媒体流需要通过 [WilddogVideo](/conversation/Android/api/wilddog-video.html)  创建：
 
 ```java
 LocalStreamOptions.Builder builder = new LocalStreamOptions.Builder();
@@ -16,7 +16,7 @@ LocalStream localStream = video.createLocalStream(options);
 
 ### 配置媒体流
 
-创建的时候，需要传入一个 [LocalStreamOptions](/conversation/android/api/local-stream-options.html) 对象，这个参数确定了本地视频流的音频、视频开关、最大尺寸和最大帧率：
+创建的时候，需要传入一个 [LocalStreamOptions](/conversation/Android/api/local-stream-options.html) 对象，这个参数确定了本地视频流的音频、视频开关、最大尺寸和最大帧率：
 * captureAudio / captureVideo 为音／视频采集的开关，设置为 false 表示关闭音／视频采集，默认为 true；
 * dimension 用来设置视频的最大尺寸，默认为 480p，如果网络条件较差，会自动降低尺寸大小；
 * maxFPS 用来设置视频的最大帧率，默认为 15 帧／秒，如果网络条件较差，会自动降低帧率。
@@ -29,7 +29,7 @@ LocalStreamOptions options = builder.captureAudio(true).captureVideo(true).dimen
 
 ### 播放媒体流
 
-媒体流包括音频流和视频流，音频流默认会自动播放，视频流需要使用 [WilddogVideoView](/conversation/android/api/wilddog-video-view.html) 来播放。
+媒体流包括音频流和视频流，音频流默认会自动播放，视频流需要使用 [WilddogVideoView](/conversation/Android/api/wilddog-video-view.html) 来播放。
 
 播放视频流：
 
