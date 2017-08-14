@@ -23,8 +23,7 @@ LocalStream localStream = video.createLocalStream(options);
 
 ```java
 LocalStreamOptions.Builder builder = new LocalStreamOptions.Builder();
-LocalStreamOptions options = builder.captureAudio(true).captureVideo(true).dimension(LocalStreamOptions.Dimension.DIMENSION_720P).frameRate(30).build();
- 
+LocalStreamOptions options = builder.captureAudio(true).captureVideo(true).dimension(LocalStreamOptions.Dimension.DIMENSION_720P).maxFps(30).build(); 
 ```
 
 ### 播放媒体流
@@ -38,7 +37,7 @@ WilddogVideView localView = (WilddogVideView)findViewById(R.id.wvv_local);
 localStream.attach(localView);
 ```
 
-播放预览视频流：
+停止播放视频流：
 
 ```java
 localStream.detach();

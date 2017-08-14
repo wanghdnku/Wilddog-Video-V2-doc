@@ -166,12 +166,12 @@ mConversation.setStatsListener(new Conversation.StatsListener() {
 
 ---
 
-### startLocalRecording(File)
+### startLocalRecording(File,WilddogVideoView,WilddogVideoView)
 
 **定义**   
 
 ```java
-boolean startLocalRecording(File file)
+boolean startLocalRecording(File file,WilddogVideoView local, WilddogVideoView remote)
 ```
 
 **说明**
@@ -183,12 +183,13 @@ boolean startLocalRecording(File file)
 | 参数名 | 描述 |
 |---|---|
 |file|录制多媒体存储的文件对象|
-
+|local|录制多媒体本地视频流对象|
+|remote|录制多媒体远程视频流对象|
 
 **示例**
 
 ```java
-mConversation.startLocalRecording(saveFile);
+mConversation.startLocalRecording(saveFile,local,remote);
 ```
 
 </br>
