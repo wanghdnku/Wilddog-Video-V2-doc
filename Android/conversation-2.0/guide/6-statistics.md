@@ -20,11 +20,11 @@ mConversation.setStatsListener(rtcStatsListener);
 ```java
 
 public void onLocalStreamStatsReport(LocalStreamStatsReport localStreamStatsReport) {
-    // localStreamStatsReport.width
-    // localStreamStatsReport.height
-    // localStreamStatsReport.FPS
-    // localStreamStatsReport.bytesSent
-    // localStreamStatsReport.bitsSentRate
+    // localStreamStatsReport.getWidth()
+    // localStreamStatsReport.getHeight()
+    // localStreamStatsReport.getFps()
+    // localStreamStatsReport.getBytesSent()
+    // localStreamStatsReport.getBitsSentRate()
 }
 ```
 
@@ -34,11 +34,11 @@ public void onLocalStreamStatsReport(LocalStreamStatsReport localStreamStatsRepo
 
 ```java
 public void onRemoteStreamStatsReport(RemoteStreamStatsReport remoteStreamStatsReport) { 
-    // remoteStreamStatsReport.width
-    // remoteStreamStatsReport.height
-    // remoteStreamStatsReport.FPS
-    // remoteStreamStatsReport.bytesReceived
-    // remoteStreamStatsReport.bitsReceivedRate
-    // remoteStreamStatsReport.delay
+    // remoteStreamStatsReport.getWidth()
+    // remoteStreamStatsReport.getHeight()
+    // remoteStreamStatsReport.getFps()
+    // remoteStreamStatsReport.getBytesReceived()
+    // remoteStreamStatsReport.getBitsReceivedRate()
+    // remoteStreamStatsReport.getDelay()
 }
 ```

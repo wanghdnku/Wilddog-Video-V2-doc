@@ -10,7 +10,7 @@ title: ScalingType
 **定义**
 
 ```java
-enum VideoScaleType { SCALE_ASPECT_FIT, SCALE_ASPECT_FILL, SCALE_ASPECT_BALANCED;}
+enum ScalingType { SCALE_ASPECT_FIT, SCALE_ASPECT_FILL, SCALE_ASPECT_BALANCED;}
 
 ```
 

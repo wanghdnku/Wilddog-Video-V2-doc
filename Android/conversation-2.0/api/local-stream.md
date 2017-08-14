@@ -43,6 +43,31 @@ localStream.setOnFrameListener(new WilddogVideo.CameraFrameListener() {
 </br>
 
 ---
+
+### switchCamera()
+
+**定义**   
+
+```java
+void switchCamera()
+```
+
+**说明**
+
+用于前后置摄像头切换。
+
+
+**示例**
+
+```java
+localStream.switchCamera();
+```
+
+</br>
+
+---
+
+
 ### close()
 
 **定义**   
@@ -65,6 +90,7 @@ localStream.close();
 </br>
 
 ---
+
 ### isClosed()
 
 **定义**   
