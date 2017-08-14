@@ -43,7 +43,7 @@ void onStreamReceived(RemoteStream stream);
 
 | 参数名 | 描述 |
 |---|---|
-|stream|[RemoteStream](/video/Android/api/remote-stream.html),远端参与者发送的媒体流.|
+|stream|[RemoteStream](/conversation/Android/api/remote-stream.html),远端参与者发送的媒体流.|
 
 </br>
 
@@ -65,7 +65,7 @@ void onError(WilddogVideoError error);
 
 | 参数名 | 描述 |
 |---|---|
-|error|[WilddogVideoError](/video/Android/api/wilddog-video-error.html),视频通话过程中的错误信息|
+|error|[WilddogVideoError](/conversation/Android/api/wilddog-video-error.html),视频通话过程中的错误信息|
 
 </br>
 
