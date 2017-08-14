@@ -10,7 +10,7 @@ title: 美颜功能
 
 ```java
 localStream = video.createLocalStream(localStreamOptions);
-localStream.setOnFrameListener(new WilddogVideo.CameraFrameListener() {
+localStream.setOnFrameListener(new LocalStream.CameraFrameListener() {
             @Override
             public void onByteFrame(byte[] bytes, int i, int i1,int var4, long var5) {
                 // TODO 设置美颜效果
