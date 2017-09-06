@@ -5,7 +5,7 @@ title: WDGVideoInitializer
 
 ## 方法
 
-### - sharedInstance
+### + sharedInstance
 
 **定义**
 
