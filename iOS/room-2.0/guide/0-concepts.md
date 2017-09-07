@@ -16,3 +16,7 @@ title: 基础概念
 ### Video View
 
 Video View 用来显示本地／远端媒体流，Local Stream 和 Room Stream 只能与 Video View 绑定来显示。
+
+### Publish & Subscribe
+
+视频会议采用了发布／订阅机制，客户端将自己的媒体流发布到视频会议的房间中，并从房间中获取远端媒体流的列表，然后选择订阅远端媒体流。
