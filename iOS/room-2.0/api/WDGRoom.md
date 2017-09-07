@@ -350,3 +350,47 @@ block             | 收到服务器回应时执行的 Block，用于通知远端
 </br>
 
 ---
+
+### - startRecordingWithCompletionBlock:
+
+**定义**
+
+```objectivec
+- (void)startRecordingWithCompletionBlock:(void (^)(NSError *error))block;
+```
+
+**说明**
+
+开始录制房间中的媒体流，并在收到服务器回应后执行回调。
+
+**参数**
+
+参数名             | 说明 
+------------------|------------------
+block             | 收到服务器回应时执行的 Block，用于通知是否成功开始录制。
+
+</br>
+
+---
+
+### - stopRecordingWithCompletionBlock:
+
+**定义**
+
+```objectivec
+- (void)stopRecordingWithCompletionBlock:(void (^)(NSError *error))block;
+```
+
+**说明**
+
+停止录制房间中的媒体流，并在收到服务器回应后执行回调。
+
+**参数**
+
+参数名             | 说明 
+------------------|------------------
+block             | 收到服务器回应时执行的 Block，用于通知是否成功停止录制。
+
+</br>
+
+---
