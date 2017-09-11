@@ -9,7 +9,7 @@ WilddogRoom 中使用 Stream 的概念来表示视频通话的参与者。每个
 
 ## 本地媒体流 (LocalStream)
 
-### 1.创建本地媒体流
+### 1. 创建本地媒体流
 
 本地媒体流包含了本地设备所采集的音频、视频信息，是视频会议所需要的基本数据。在加入视频会议之前，需要创建 [WDGLocalStream](placeholder) 实例：
 
@@ -17,7 +17,7 @@ WilddogRoom 中使用 Stream 的概念来表示视频通话的参与者。每个
 WDGLocalStream *localStream = [[WDGLocalStream alloc] initWithOptions:options];
 ```
 
-### 2.配置本地媒体流
+### 2. 配置本地媒体流
 
 创建本地媒体流需传入 [WDGLocalStreamOptions](placeholder) 对象，用于确定本地视频流的音频、视频开关、最大尺寸和最大帧率：
 * shouldCaptureAudio / shouldCaptureVideo 为音／视频采集的开关，设置为 NO 表示关闭音／视频采集，默认为 YES；
@@ -32,7 +32,7 @@ localStreamOptions.dimension = WDGVideoDimensions720p;
 localStreamOptions.maxFPS = 20;
 ```
 
-### 3.播放本地媒体流
+### 3. 播放本地媒体流
 
 本地媒体流包括音频和视频。默认不播放音频，使用 [WDGVideoView](placeholder) 播放视频。
 
@@ -63,11 +63,11 @@ localStream.videoEnabled = YES;
 // 远端媒体流需要从服务器获取。在视频会议中，远端媒体流有 MCU 和 SFU 两种模式。在 MCU 模式下，服务器会将收到的所有远端媒体流进行混流处理，并作为一个媒体流发给客户端。在 SFU 模式下，服务器将远端媒体流转发给客户端，客户端可能收到多个独立的媒体流。
 ```
 
-### 获取远端媒体流
+### 1. 获取远端媒体流
 
-通过 [`-[WDGRoomDelegate wilddogRoom:didStreamAdded:]`](placeholder) 回调方法获取远端媒体流。
+通过 `-[WDGRoomDelegate wilddogRoom:didStreamAdded:]` 回调方法获取远端媒体流。
 
-### 播放远端媒体流
+### 2. 播放远端媒体流
 
 远端媒体流包括音频和视频。默认播放音频，使用 [WDGVideoView](placeholder) 播放视频。
 
