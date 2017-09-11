@@ -26,7 +26,10 @@ end
 
 [WDGVideoInitializer](placeholder) 是 WilddogRoom 和 WilddogVideo 共享的初始化类，在使用视频通话或者视频会议之前，需要先初始化 [WDGVideoInitializer](placeholder) 实例，以连接野狗服务器。
 
-初始化之前，打开控制面板 - 应用 - 视频通话 - 配置，获取 VideoAppID。
+WilddogRoom 的初始化需要 VideoAppId 和 token：
+
+- VideoAppId 是用户在野狗控制台创建的应用的标识。打开控制面板 - 应用 - 视频通话 - 配置，获取 VideoAppID。
+- Token（身份认证令牌）是用户在 WilddogRoom SDK 中的唯一身份标识，用于识别用户身份并控制访问权限。
 
 用户需要通过 [野狗身份认证](/auth/iOS/index.html) 服务来认证身份并登录服务器。开发者可以根据需要选择匿名登录、手机登录、邮箱密码、第三方或自定义认证等多种方式进行身份认证。
 
