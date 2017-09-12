@@ -1,9 +1,9 @@
 title: WDGRoomDelegate
 ---
 
-`WDGRoom` 的代理方法，用于通知房间相关的事件。
+`WDGRoom` 的代理方法，用于通知 Room 相关的事件。
 
-## 方法
+## 方法 
 
 ### - wilddogRoomDidConnect:
 
@@ -15,13 +15,15 @@ title: WDGRoomDelegate
 
 **说明**
 
-`WDGRoom` 通过调用该方法通知代理房间已成功连接。
+加入 Room 成功后的回调。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+
+</br>
 
 ---
 
@@ -35,13 +37,15 @@ wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
 
 **说明**
 
-WDGRoom` 通过调用该方法通知代理房间已断开连接。
+离开 Room 后的回调。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+
+</br>
 
 ---
 
@@ -55,35 +59,16 @@ wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
 
 **说明**
 
-`WDGRoom` 通过调用该方法通知代理房间中有远端媒体流加入。
+Room 中有远端媒体流加入。回调中的 `WDGRoomStream` 对象只包含描述流的基本信息，不包含媒体数据，需要调用 `-[WDGRoom subscribeRoomStream:]` 方法获取媒体数据。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
-roomStream        | 加入房间的远端媒体流，只包含描述流的基本信息，不包含媒体数据。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+roomStream        | Room 中新加入的远端媒体流，只包含描述流的基本信息，不包含媒体数据。请参考 [WDGRoomStream](placeholder)。
 
----
-
-### - wilddogRoom: didStreamChanged: 
-
-**定义**
-
-```objectivec
-- (void)wilddogRoom:(WDGRoom *)wilddogRoom didStreamChanged:(WDGRoomStream *)roomStream;
-```
-
-**说明**
-
-`WDGRoom` 通过调用该方法通知代理房间中有远端媒体流发生改变。
-
-**参数**
-
-参数名             | 说明 
-------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
-roomStream        | 房间中发生变化的远端媒体流，只包含描述流的基本信息，不包含媒体数据。
+</br>
 
 ---
 
@@ -97,14 +82,16 @@ roomStream        | 房间中发生变化的远端媒体流，只包含描述流
 
 **说明**
 
-`WDGRoom` 通过调用该方法通知代理房间中有远端流断开。
+Room 中有远端媒体流停止发布。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
-roomStream        | 房间中断开的远端媒体流，只包含描述流的基本信息，不包含媒体数据。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+roomStream        | Room 中停止发布的远端媒体流。请参考 [WDGRoomStream](placeholder)。
+
+</br>
 
 ---
 
@@ -118,14 +105,16 @@ roomStream        | 房间中断开的远端媒体流，只包含描述流的基
 
 **说明**
 
-`WDGRoom` 通过调用该方法通知代理收到远端媒体流数据。
+收到远端媒体流数据。调用 `-[WDGRoomStream attach:]` 方法在 [VideoView](placeholder) 中预览媒体流。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
-roomStream        | 房间中断开的远端媒体流，包含了媒体数据。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+roomStream        | 收到数据的远端媒体流。请参考 [WDGRoomStream](placeholder)。
+
+</br>
 
 ---
 
@@ -139,13 +128,15 @@ roomStream        | 房间中断开的远端媒体流，包含了媒体数据。
 
 **说明**
 
-`WDGRoom` 通过调用该方法通知代理发生错误。
+Room 中发生错误。
 
 **参数**
 
 参数名             | 说明 
 ------------------|------------------
-wilddogRoom       | 调用该方法的 `WDGRoom` 实例。
-error             | 错误信息，可通过错误码区分错误类型。
+wilddogRoom       | 调用该方法的 `WDGRoom` 实例。请参考 [WDGRoom](placeholder)。
+error             | 错误信息，通过错误码区分错误类型。请参考 [error-code](placeholder)。
+
+</br>
 
 ---
