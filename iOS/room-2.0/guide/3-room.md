@@ -13,13 +13,13 @@ WilddogRoom 通过用房间的概念来指代一次视频会议，一个房间�
 [WDGRoom](placeholder) 是视频会议的主入口。建立视频会议的时候，需要使用 roomId 来初始化 [WDGRoom](placeholder) 实例。如果指定的 roomId 已经存在，则加入该视频会议；若果 roomId 不存在，则使用这个 roomId 创建新的会议：
 
 ```objectivec
-WDGRoom *room = [[WDGRoom alloc] initWithRoomId:_roomId];
+WDGRoom *room = [[WDGRoom alloc] initWithRoomId:@"your-roomId"];
 ```
 
 建立房间后，需要调用 `-[WDGRoom connect]` 方法开启网络连接：
 
 ```objectivec
-[self.room connect];
+[room connect];
 ```
 
 ## 离开 Room
@@ -27,7 +27,7 @@ WDGRoom *room = [[WDGRoom alloc] initWithRoomId:_roomId];
 要结束视频会议，需要调用 `-[WDGRoom disconnect]` 方法断开链接：
 
 ```objectivec
-[self.room disconnect];
+[room disconnect];
 ```
 
 
