@@ -1,9 +1,9 @@
-title: 房间
+title: 视频会议
 ---
 
 本篇文档介绍如何创建或加入视频会议。
 
-Room 表示一个多人的视频会话。多个用户可以加入同一个 Room 进行音视频通话。
+Room 表示一个多人的视频会议。多个用户可以加入同一个 Room 进行音视频通话。
 
 
 ## 加入 Room
@@ -22,9 +22,10 @@ WDGRoom *room = [[WDGRoom alloc] initWithRoomId:@"your-roomId"];
 [room connect];
 ```
 
+
 ## 离开 Room
 
-要结束视频会议，需要调用 `-[WDGRoom disconnect]` 方法断开链接：
+要结束视频会议，需要调用 `-[WDGRoom disconnect]` 方法断开网络连接：
 
 ```objectivec
 [room disconnect];

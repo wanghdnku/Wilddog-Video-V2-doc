@@ -39,13 +39,13 @@ end
 ```objectivec
 [WDGApp configureWithOptions:[[WDGOptions alloc] initWithSyncURL:@"https://your-video-appid.wilddogio.com"]];
 [[WDGAuth auth] signOut:nil];
-
+// 匿名登录
 [[WDGAuth auth] signInAnonymouslyWithCompletion:^(WDGUser * _Nullable user, NSError * _Nullable error) {
     if (!error) {
         // 获取 Token
         [user getTokenWithCompletion:^(NSString * _Nullable idToken, NSError * _Nullable error) {
             self.uid = user.uid;
-            // 初始化 WDGVideoInitializer。
+            // 初始化 WDGVideoInitializer
             [[WDGVideoInitializer sharedInstancce] configureWithVideoAppId:@"your-video-appid" token:idToken];
         }];
     }

@@ -36,30 +36,30 @@ localStreamOptions.maxFPS = 20;
 
 本地媒体流包括音频和视频。默认不播放音频，使用 [WDGVideoView](placeholder) 播放视频。
 
-播放本地视频流：
+使用 `-[WDGLocalStream attach:]` 方法播放本地视频流：
 
 ```objectivec
 [localStream attach:self.localVideoView];
 ```
 
-停止播放本地视频流：
+使用 `-[WDGLocalStream detach:]` 方法停止播放本地视频流：
 
 ```objectivec
 [localStream detach:self.localVideoView];
 ```
 
-可以设定 `audioEnabled` 和 `videoEnabled` 两个方法来控制是否播放音频、视频，默认都为开启。
+可以设定 `audioEnabled` 和 `videoEnabled` 两个属性来控制是否播放音频、视频，默认都为开启。
 
 > BUG: 本地音频播放不开启？
 
 ```objectivec
 // 设置不播放媒体流的视频
-localStream.videoEnabled = YES;
+localStream.videoEnabled = NO;
 ```
 
 ## 远端媒体流 (RemoteStream)
 
-```c
+```objectivec
 // 远端媒体流需要从服务器获取。在视频会议中，远端媒体流有 MCU 和 SFU 两种模式。在 MCU 模式下，服务器会将收到的所有远端媒体流进行混流处理，并作为一个媒体流发给客户端。在 SFU 模式下，服务器将远端媒体流转发给客户端，客户端可能收到多个独立的媒体流。
 ```
 
@@ -71,21 +71,21 @@ localStream.videoEnabled = YES;
 
 远端媒体流包括音频和视频。默认播放音频，使用 [WDGVideoView](placeholder) 播放视频。
 
-播放本地视频流：
+使用 `-[WDGRoomStream attach:]` 方法播放远端视频流：
 
 ```objectivec
 [remoteStream attach:self.remoteVideoView];
 ```
 
-停止播放本地视频流：
+使用 `-[WDGRoomStream detach:]` 方法停止播放远端视频流：
 
 ```objectivec
 [remoteStream detach:self.remoteVideoView];
 ```
 
-可以设定 `audioEnabled` 和 `videoEnabled` 两个方法来控制是否播放音频、视频，默认都为开启。
+可以设定 `audioEnabled` 和 `videoEnabled` 两个属性来控制是否播放音频、视频，默认都为开启。
 
 ```objectivec
 // 设置不播放媒体流的视频
-remoteStream.videoEnabled = YES;
+remoteStream.videoEnabled = NO;
 ```
